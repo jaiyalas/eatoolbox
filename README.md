@@ -32,5 +32,5 @@
 
 ## Todo
 
-  * confish setup/configure
-
+  * [tool] confish setup/configure
+  * [doc] installation guide
