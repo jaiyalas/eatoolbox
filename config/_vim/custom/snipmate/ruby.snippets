@@ -1,0 +1,8 @@
+# #!/usr/bin/env ruby
+snippet main
+	if __FILE__ == $PROGRAM_NAME
+		if ARGV.size != ${1:number of arguments}
+			warn "Usage : %s ${2:arguments}" % $PROGRAM_MANE
+			exit
+		end
+	end
