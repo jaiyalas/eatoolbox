@@ -21,8 +21,12 @@
 ## Language
 
   * Haskell
+  * Ruby
+  * etc (bash, elisp ...)
 
-## Tools
+## Providing Stuff
+
+### Tools
   
   * rm-alt
     - [goal] An alternative to rm; move files into trash can (for Mac). 
@@ -34,7 +38,7 @@
     - [author] <https://github.com/godfat/dev-tool>
     - [setup] <https://github.com/godfat/dev-tool/blob/master/.config/fish/config.fish> 
 
-## Env Config
+### Env Config
 
   * config/
     - [desciption] contains environment config
@@ -51,5 +55,5 @@
 
 ## Todo
 
-  * [tool] confish setup/configure
   * [doc] installation guide
+  * [config] organize config/
