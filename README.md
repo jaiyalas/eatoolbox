@@ -34,6 +34,21 @@
     - [author] <https://github.com/godfat/dev-tool>
     - [setup] <https://github.com/godfat/dev-tool/blob/master/.config/fish/config.fish> 
 
+## Env Config
+
+  * config/
+    - [desciption] contains environment config
+    - [migrated from] <https://github.com/jaiyalas/dot-rc>
+  * config/\_config/
+    - [desciption] correspones to *~/.config/*
+  * config/\_vim/
+    - [desciption] correspones to *~/.vim/*
+    - [author] <http://github.com/rueshyna/vimrc>
+    - [setup] exec install.sh
+  * config/\_emacs.d/
+    - [desciption] correspones to *~/.emacs.d/*
+    - [setup] config/\_emacs
+
 ## Todo
 
   * [tool] confish setup/configure
