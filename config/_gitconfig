@@ -1,0 +1,11 @@
+[user]
+	name = Yun-Yan Chi
+	email = jaiyalas@gmail.com
+[color]
+        ui = true
+[alias]
+        undo = reset --hard
+        st   = status
+        co   = checkout
+        br   = branch
+        cm   = commit
