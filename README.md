@@ -57,3 +57,4 @@
 
   * [doc] installation guide
   * [config] organize config/
+  * [improve] prompt.rb by rewiting vai haskell or just fixed something 
