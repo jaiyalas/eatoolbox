@@ -1,4 +1,4 @@
-# dot-rc
+# eatoolbox/config
 
 * My system config on 
   * Mac OS X 10.7.5
