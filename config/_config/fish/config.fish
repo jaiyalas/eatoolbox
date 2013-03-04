@@ -35,6 +35,7 @@ end
 
 set -x CDPATH .
 set -x PROMPT_SHELL fish
+set -x PROMPT_PATH_ABBR 1
 
 ##### Function #####
 
