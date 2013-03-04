@@ -1,3 +1,5 @@
+(add-to-list 'load-path "~/.emacs.d/")
+
 ;; ---------------------------
 ;; === color theme loading ===
 ;; ---------------------------
@@ -16,6 +18,7 @@
 ;;    (add-hook 'find-file-hook (lambda () (linum-mode 1)))
 ;;    (global-linum-mode 1))
 ;; )
+(global-linum-mode 0)
 
 ;; ---------------------------
 ;; === fix input method to TeX ===
@@ -24,23 +27,45 @@
 (set-input-method 'TeX)
 
 ;; ---------------------------
+;; === show directory as tree ===
+;; ---------------------------
+
+(require 'tree-mode)
+(require 'windata)
+(require 'dirtree)
+(global-set-key "\C-o" 'dirtree-show)
+
+(custom-set-variables
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ '(tab-stop-list (quote (4 8 12 16 20 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120))))
+
+(defun ep-dirtree ()
+  (interactive)
+  (dirtree-in-buffer eproject-root t))
+
+;; ---------------------------
 ;; === agda mode ===
 ;; ---------------------------
 (load-file (let ((coding-system-for-read 'utf-8))
-                "~/.emacs.d/agda-mode/agda2.el"))
+  "/Users/jaiyalas/.cabal/share/Agda-2.3.0.1/emacs-mode/agda2.el" ))
 (load-file (let ((coding-system-for-read 'utf-8))
-                (shell-command-to-string "agda-mode locate")))
+  (shell-command-to-string "agda-mode locate")))
 (eval-after-load "quail/latin-ltx" '(mapc (lambda (pair) (quail-defrule (car pair) (cadr pair) "TeX"))
-	'(("\\comp" "∘")
-	  ("\\[[" "⟦") ("\\]]" "⟧")
-	  ; If you find it awkward to write comments using the TeX input
-	  ; method the following bindings may make life more bearable
-	  ; for you:
+  '(("\\comp" "∘")
+    ("\\[[" "⟦") ("\\]]" "⟧")
+    ; If you find it awkward to write comments using the TeX input
+    ; method the following bindings may make life more bearable
+    ; for you:
           ("--" ["--"]) ("---" ["---"])
           ; Add more keybindings here.
-	  ("\\/" ["\\/"]) ("/\\-" ["/\\-"]) ("\\from" ["←"]) ("\\Times" ["⨉"])
-	  ("^t"  ["ᵗ"]) ("\\endpf" ["∎"]) ("\\cons" ["∷"]) ("~" ["~"])
-	  ("\\langle" ["⟨"]) ("\\rangle" ["⟩"])
-	  ("\\lcata" ["⦇"]) ("\\rcata" ["⦈"])
+    ("\\/" ["\\/"]) ("/\\-" ["/\\-"]) ("\\from" ["←"]) ("\\Times" ["⨉"])
+    ("^t"  ["ᵗ"]) ("\\endpf" ["∎"]) ("\\cons" ["∷"]) ("~" ["~"])
+    ("\\langle" ["⟨"]) ("\\rangle" ["⟩"])
+    ("\\lcata" ["⦇"]) ("\\rcata" ["⦈"])
           )))
+
+
 
