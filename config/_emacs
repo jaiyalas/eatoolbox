@@ -1,5 +1,7 @@
 
 (add-to-list 'load-path "~/.emacs.d/")
+(add-to-list 'load-path "~/.emacs.d/utils")
+(add-to-list 'load-path "~/.emacs.d/modes")
 
 ;; --------------------------
 ;; === reset default face ===
@@ -12,13 +14,15 @@
   ;   :height 240 :width normal :family "DejaVu Sans Mono"))))
 )
 
+;(require 'unicode-fonts)
+;(unicode-fonts-setup)
+
 ;; -------------------
 ;; === color theme ===
 ;; -------------------
 
 (require 'color-theme)
 (color-theme-initialize)
-(load-file "~/.emacs.d/themes/color-theme-twilight.el")
 (eval-after-load "color-theme" '(color-theme-twilight))
 
 ;; -------------------
