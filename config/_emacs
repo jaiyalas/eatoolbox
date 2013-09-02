@@ -1,43 +1,55 @@
+
 (add-to-list 'load-path "~/.emacs.d/")
 
-;; ---------------------------
-;; === color theme loading ===
-;; ---------------------------
+;; --------------------------
+;; === reset default face ===
+;; --------------------------
+
+(custom-set-faces
+  '(default ((t (:height 180 :width normal :family "DejaVu Sans Mono"))))
+  ; '(default ((t (:stipple nil :background "grey20" :foreground "grey90" :inverse-video nil
+  ;   :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal
+  ;   :height 240 :width normal :family "DejaVu Sans Mono"))))
+)
+
+;; -------------------
+;; === color theme ===
+;; -------------------
 
 (require 'color-theme)
 (color-theme-initialize)
 (load-file "~/.emacs.d/themes/color-theme-twilight.el")
 (eval-after-load "color-theme" '(color-theme-twilight))
 
-;; ---------------------------
-;; === switch for line number mode ===
-;; ---------------------------
+;; -------------------
+;; === Line Number ===
+;; -------------------
 
-;; (if (eq window-system 'X) 
-;;   ((require 'linum)
-;;    (add-hook 'find-file-hook (lambda () (linum-mode 1)))
-;;    (global-linum-mode 1))
-;; )
-(global-linum-mode 0)
+; (if (eq window-system 'X) 
+;   ((require 'linum)
+;    (add-hook 'find-file-hook (lambda () (linum-mode 1)))
+;    (global-linum-mode 1))
+; )
+(global-linum-mode 1)
 
-;; ---------------------------
-;; === fix input method to TeX ===
-;; ---------------------------
+;; ----------------------------
+;; === TeX as input method  ===
+;; ----------------------------
 
 (set-input-method 'TeX)
 
-;; ---------------------------
+;; ---------------------
 ;; === markdown mode ===
-;; ---------------------------
+;; ---------------------
 
 (autoload 'markdown-mode "markdown-mode"
    "Major mode for editing Markdown files" t)
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 
-;; ---------------------------
-;; === show directory as tree ===
-;; ---------------------------
+;; ----------------------
+;; === Directory tree ===
+;; ----------------------
 
 (require 'tree-mode)
 (require 'windata)
@@ -45,36 +57,35 @@
 (global-set-key "\C-o" 'dirtree-show)
 
 (custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- '(tab-stop-list (quote (4 8 12 16 20 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120))))
+ '(tab-stop-list (quote (4 8 12 16 20 24 28 32 36 40 44 48 
+  52 56 60 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120)))
+)
 
 (defun ep-dirtree ()
   (interactive)
   (dirtree-in-buffer eproject-root t))
 
-;; ---------------------------
-;; === agda mode ===
-;; ---------------------------
-(load-file (let ((coding-system-for-read 'utf-8))
-  "/Users/jaiyalas/.cabal/share/Agda-2.3.0.1/emacs-mode/agda2.el" ))
-(load-file (let ((coding-system-for-read 'utf-8))
-  (shell-command-to-string "agda-mode locate")))
-(eval-after-load "quail/latin-ltx" '(mapc (lambda (pair) (quail-defrule (car pair) (cadr pair) "TeX"))
-  '(("\\comp" "∘")
-    ("\\[[" "⟦") ("\\]]" "⟧")
-    ; If you find it awkward to write comments using the TeX input
-    ; method the following bindings may make life more bearable
-    ; for you:
-          ("--" ["--"]) ("---" ["---"])
-          ; Add more keybindings here.
-    ("\\/" ["\\/"]) ("/\\-" ["/\\-"]) ("\\from" ["←"]) ("\\Times" ["⨉"])
-    ("^t"  ["ᵗ"]) ("\\endpf" ["∎"]) ("\\cons" ["∷"]) ("~" ["~"])
-    ("\\langle" ["⟨"]) ("\\rangle" ["⟩"])
-    ("\\lcata" ["⦇"]) ("\\rcata" ["⦈"])
-          )))
+;; -------------------
+;; === Prolog mode ===
+;; -------------------
+(autoload 'run-prolog "prolog" "Start a Prolog sub-process." t)
+(autoload 'prolog-mode "prolog" "Major mode for editing Prolog programs." t)
+(autoload 'mercury-mode "prolog" "Major mode for editing Mercury programs." t)
+(setq prolog-system 'swi)
+(setq auto-mode-alist (append '(("\\.pl$" . prolog-mode)
+  ("\\.m$" . mercury-mode)) auto-mode-alist))
 
+;; -------------------
+;; === Hamlet Mode ===
+;; -------------------
+
+(require 'hamlet-mode)
+
+;; -----------------
+;; === agda mode ===
+;; -----------------
+
+(load-file "~/.emacs.d/load-agda.el")
+(require 'agda2-mode)
 
 
