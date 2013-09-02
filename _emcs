@@ -1,0 +1,95 @@
+
+(add-to-list 'load-path "~/.emacs.d/")
+(add-to-list 'load-path "~/.emacs.d/utils")
+(add-to-list 'load-path "~/.emacs.d/modes")
+
+;; --------------------------
+;; === reset default face ===
+;; --------------------------
+
+(custom-set-faces
+  '(default ((t (:height 180 :width normal :family "DejaVu Sans Mono"))))
+  ; '(default ((t (:stipple nil :background "grey20" :foreground "grey90" :inverse-video nil
+  ;   :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal
+  ;   :height 240 :width normal :family "DejaVu Sans Mono"))))
+)
+
+;(require 'unicode-fonts)
+;(unicode-fonts-setup)
+
+;; -------------------
+;; === color theme ===
+;; -------------------
+
+(require 'color-theme)
+(color-theme-initialize)
+(eval-after-load "color-theme" '(color-theme-twilight))
+
+;; -------------------
+;; === Line Number ===
+;; -------------------
+
+; (if (eq window-system 'X) 
+;   ((require 'linum)
+;    (add-hook 'find-file-hook (lambda () (linum-mode 1)))
+;    (global-linum-mode 1))
+; )
+(global-linum-mode 1)
+
+;; ----------------------------
+;; === TeX as input method  ===
+;; ----------------------------
+
+(set-input-method 'TeX)
+
+;; ---------------------
+;; === markdown mode ===
+;; ---------------------
+
+(autoload 'markdown-mode "markdown-mode"
+   "Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+
+;; ----------------------
+;; === Directory tree ===
+;; ----------------------
+
+(require 'tree-mode)
+(require 'windata)
+(require 'dirtree)
+(global-set-key "\C-o" 'dirtree-show)
+
+(custom-set-variables
+ '(tab-stop-list (quote (4 8 12 16 20 24 28 32 36 40 44 48 
+  52 56 60 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120)))
+)
+
+(defun ep-dirtree ()
+  (interactive)
+  (dirtree-in-buffer eproject-root t))
+
+;; -------------------
+;; === Prolog mode ===
+;; -------------------
+(autoload 'run-prolog "prolog" "Start a Prolog sub-process." t)
+(autoload 'prolog-mode "prolog" "Major mode for editing Prolog programs." t)
+(autoload 'mercury-mode "prolog" "Major mode for editing Mercury programs." t)
+(setq prolog-system 'swi)
+(setq auto-mode-alist (append '(("\\.pl$" . prolog-mode)
+  ("\\.m$" . mercury-mode)) auto-mode-alist))
+
+;; -------------------
+;; === Hamlet Mode ===
+;; -------------------
+
+(require 'hamlet-mode)
+
+;; -----------------
+;; === agda mode ===
+;; -----------------
+
+(load-file "~/.emacs.d/load-agda.el")
+(require 'agda2-mode)
+
+
