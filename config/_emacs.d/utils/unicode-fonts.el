@@ -1327,31 +1327,31 @@ Set to nil to disable."
 
 (defcustom unicode-fonts-block-font-mapping
   '(("Aegean Numbers"                                   (
-                                                         ; - "Aegean"
-                                                         "Quivira"
+                                                         "Aegean"
+                                                         ; - "Quivira"
                                                          ))
     ("Alchemical Symbols"                               (
-                                                         ; - "Symbola"
-                                                         "Quivira"
+                                                         "Symbola"
+                                                         ; - "Quivira"
                                                          ))
     ("Alphabetic Presentation Forms"                    (
                                                          "DejaVu Sans:width=condensed"
                                                          ; - "Arial Unicode MS"
-                                                         "Quivira"
+                                                         ; - "Quivira"
                                                          ))
     ("Ancient Greek Musical Notation"                   (
                                                          ; - "Musica"
-                                                         ; - "Symbola"
-                                                         "Quivira"
+                                                         "Symbola"
+                                                         ; - "Quivira"
                                                          ))
     ("Ancient Greek Numbers"                            (
                                                          ; - "Apple Symbols"
-                                                         ; - "Aegean"
-                                                         "Quivira"
+                                                         "Aegean"
+                                                         ; - "Quivira"
                                                          ))
     ("Ancient Symbols"                                  (
-                                                         ; - "Aegean"
-                                                         "Quivira"
+                                                         "Aegean"
+                                                         ; - "Quivira"
                                                          ))
     ;; ("Arabic Extended-A"                             (""))                           ; todo
     ;; ("Arabic Mathematical Alphabetic Symbols"        (""))                           ; todo
@@ -1408,8 +1408,8 @@ Set to nil to disable."
                                                          ; - "Arabic Typesetting"
                                                          ; - "Traditional Arabic"
                                                          ; - "Scheherazade"
-                                                         "DejaVu Sans Mono"
-                                                         "DejaVu Sans:width=condensed"
+                                                         ; - "DejaVu Sans Mono"
+                                                         ; - "DejaVu Sans:width=condensed"
                                                          ; - "Arial Unicode MS"
                                                          ; - "Nadeem"
                                                          ; - "Tahoma"
@@ -1418,12 +1418,12 @@ Set to nil to disable."
                                                          ; - "Kufi Standard GK"
                                                          ; - "DecoType Naskh"
                                                          ; - "Koodak"
-                                                         ; - "Geeza Pro"
+                                                         "Geeza Pro"
                                                          ))
     ("Armenian"                                         (
                                                          ; - "Mshtakan"
                                                          ; - "Sylfaen"
-                                                         ; - "DejaVu Sans:width=condensed"
+                                                         "DejaVu Sans:width=condensed"
                                                          "Quivira"
                                                          ; - "MPH 2B Damase"
                                                          ; - "Arial Unicode MS"
@@ -1494,10 +1494,10 @@ Set to nil to disable."
                                                          ))
     ;; ("Brahmi"                                        (""))
     ("Braille Patterns"                                 (
-                                                         "Quivira"
+                                                         ; - "Quivira"
                                                          ; - "DejaVu Sans:width=condensed"
                                                          ; - "Apple Symbols"
-                                                         ; - "Symbola"
+                                                         "Symbola"
                                                          ))
     ; - ("Buginese"                                         (
     ; -                                                      "MPH 2B Damase"
@@ -1659,8 +1659,8 @@ Set to nil to disable."
     ; -                                                      "BabelStone Han"               ; 222/222
     ; -                                                      ))
     ("Carian"                                           (
-                                                         ; - "Aegean"
-                                                         "Quivira"
+                                                         "Aegean"
+                                                         ; - "Quivira"
                                                          ))
     ;; ("Chakma"                                        (""))                           ; todo
     ("Cham"                                             (                               ; todo quality free alternative
@@ -1708,13 +1708,13 @@ Set to nil to disable."
                                                          ; - "Apple Symbols"
                                                          ; - "Arial Unicode MS"
                                                          "Symbola"
-                                                         "Quivira"
+                                                         ; - "Quivira"
                                                          ))
     ("Counting Rod Numerals"                            (
                                                          ; - "WenQuanYi Zen Hei Mono"       ; 18/18
                                                          ; - "Apple Symbols"
                                                          "Symbola"
-                                                         "Quivira"
+                                                         ; - "Quivira"
                                                          ; - "Code2001"                     ; 18/18
                                                          ))
     ("Cuneiform Numbers and Punctuation"                (
@@ -1803,8 +1803,8 @@ Set to nil to disable."
                                                          ))
     ("Emoticons"                                        (
                                                          ;; "Apple Color Emoji"
-                                                         ; - "Symbola"
-                                                         "Quivira"
+                                                         "Symbola"
+                                                         ; - "Quivira"
                                                          ))
     ("Enclosed Alphanumeric Supplement"                 (
                                                          "Quivira"
@@ -1818,14 +1818,14 @@ Set to nil to disable."
                                                          ))
     ("Enclosed CJK Letters and Months"                  (
                                                          ; - "WenQuanYi Zen Hei Mono"       ; 202/254
-                                                         ; - "SimHei"
+                                                         "SimHei"
                                                          ; - "FangSong"
                                                          ; - "MingLiU"
                                                          ;; "Aqua Kana"
                                                          ; - "Arial Unicode MS"
                                                          ; - "HanaMinA"                     ; 249/254
                                                          ; - "BabelStone Han"               ; 191/254
-                                                         "Quivira"
+                                                         ; - "Quivira"
                                                          ; - "UnBatang"                     ; 58/254
                                                          ))
     ; - ("Enclosed Ideographic Supplement"                  (
@@ -1861,8 +1861,8 @@ Set to nil to disable."
                                                          ; - "Apple Symbols"
                                                          ; - "Cambria Math"
                                                          "DejaVu Sans:width=condensed"
-                                                         ; - "Symbola"
-                                                         "Quivira"
+                                                         "Symbola"
+                                                         ; - "Quivira"
                                                          ))
     ("Geometric Shapes"                                 (
                                                          "DejaVu Sans Mono"
@@ -2038,7 +2038,7 @@ Set to nil to disable."
                                                          ; - "Quivira"                      ; 96/96
                                                          ))
     ("Ideographic Description Characters"               (
-                                                         ; - "SimHei"
+                                                         "SimHei"
                                                          ; - "FangSong"
                                                          ; - "SimSun"
                                                          ; - "Microsoft YaHei"
@@ -2047,7 +2047,7 @@ Set to nil to disable."
                                                          ; - "Microsoft JhengHei"
                                                          ; - "Apple Myungjo"
                                                          ; - "HanaMinA"                     ; 12/12
-                                                         "Quivira"
+                                                         ; - "Quivira"
                                                          ; - "DFKai-SB"
                                                          ))
     ("Imperial Aramaic"                                 (
@@ -2196,8 +2196,8 @@ Set to nil to disable."
                                                          ; - "DejaVu Sans:width=condensed"  ; 75/80
                                                          ; - "Arial Unicode MS"             ; 57/80
                                                          ; - "Code2000"                     ; 80/80
-                                                         ; - "Symbola"                      ; 80/80
-                                                         "Quivira"                      ; 80/80
+                                                         "Symbola"                      ; 80/80
+                                                         ; - "Quivira"                      ; 80/80
                                                          ))
     ; - ("Limbu"                                            (
     ; -                                                      "MPH 2B Damase"
@@ -2215,16 +2215,16 @@ Set to nil to disable."
                                                          ))
     ;; ("Low Surrogates"                                (""))                           ; no displayable characters
     ("Lycian"                                           (
-                                                         ; - "Aegean"
-                                                         "Quivira"
+                                                         "Aegean"
+                                                         ; - "Quivira"
                                                          ))
     ("Lydian"                                           (
-                                                         ; - "Aegean"
-                                                         "Quivira"
+                                                         "Aegean"
+                                                         ; - "Quivira"
                                                          ))
     ("Mahjong Tiles"                                    (
-                                                         ; - "Symbola"
-                                                         "Quivira"
+                                                         "Symbola"
+                                                         ; - "Quivira"
                                                          ))
     ; - ("Malayalam"                                        (
     ; -                                                      "Malayalam Sangam MN"
@@ -2238,8 +2238,8 @@ Set to nil to disable."
     ("Mathematical Alphanumeric Symbols"                (
                                                          ; - "Cambria Math"                 ; 994/996
                                                          ; - "Code2001"                     ; 994/996
-                                                         ; - "Symbola"                      ; 996/996
-                                                         "Quivira"                      ; 996/996
+                                                         "Symbola"                      ; 996/996
+                                                         ; - "Quivira"                      ; 996/996
                                                          ))
     ("Mathematical Operators"                           (
                                                          ; - "DejaVu Sans Mono"             ; 159/256
@@ -2248,8 +2248,8 @@ Set to nil to disable."
                                                          ; - "DejaVu Sans:width=condensed"  ; 256/256
                                                          ; - "Arial Unicode MS"             ; 242/256
                                                          ; - "Code2000"                     ; 256/256
-                                                         ; - "Symbola"                      ; 256/256
-                                                         "Quivira"                      ; 256/256
+                                                         "Symbola"                      ; 256/256
+                                                         ; - "Quivira"                      ; 256/256
                                                          ))
     ;; ("Meetei Mayek Extensions"                       ("")                            ; todo
     ; - ("Meetei Mayek"                                     (
@@ -2265,16 +2265,16 @@ Set to nil to disable."
     ;; ("Miao"                                          (""))                           ; todo
     ("Miscellaneous Mathematical Symbols-A"             (
                                                          ; - "Apple Symbols"
-                                                         ; - "Symbola"                      ; 48/48
-                                                         "Quivira"                      ; 48/48
+                                                         "Symbola"                      ; 48/48
+                                                         ; - "Quivira"                      ; 48/48
                                                          ; - "Cambria Math"                 ; 28/48
                                                          ))
     ("Miscellaneous Mathematical Symbols-B"             (
                                                          ; - "Apple Symbols"
                                                          ; - "Cambria Math"                 ; 128/128
                                                          ; - "Code2000"                     ; 128/128
-                                                         ; - "Symbola"                      ; 128/128
-                                                         "Quivira"                      ; 128/128
+                                                         "Symbola"                      ; 128/128
+                                                         ; - "Quivira"                      ; 128/128
                                                          ))
     ("Miscellaneous Symbols and Pictographs"            (
                                                          ;; "Apple Color Emoji"         ; 533/533
@@ -2282,20 +2282,20 @@ Set to nil to disable."
                                                          ; - "Quivira"                      ; 157/533
                                                          ))
     ("Miscellaneous Symbols and Arrows"                 (
-                                                         ; - "Symbola"
-                                                         "Quivira"
+                                                         "Symbola"
+                                                         ; - "Quivira"
                                                          ))
     ("Miscellaneous Symbols"                            (
                                                          ; - "Apple Symbols"
                                                          ; - "Arial Unicode MS"
-                                                         ; - "Symbola"
-                                                         "Quivira"
+                                                         "Symbola"
+                                                         ; - "Quivira"
                                                          ))
     ("Miscellaneous Technical"                          (
                                                          ; - "Apple Symbols"
                                                          ; - "Cambria Math"                 ; 208/244
-                                                         ; - "Symbola"                      ; 244/244
-                                                         "Quivira"                      ; 244/244
+                                                         "Symbola"                      ; 244/244
+                                                         ; - "Quivira"                      ; 244/244
                                                          ))
     ("Modifier Tone Letters"                            (
                                                          ; - "Apple Myungjo"

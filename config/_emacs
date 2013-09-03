@@ -44,7 +44,7 @@
      "Code2000" "Code2001"
      "DejaVu Sans Mono" "DejaVu Sans"    
      "Geeza Pro" "Osaka" "SimHei" 
-     "Symbola" "Quivira" "Apple Symbols"))
+     "Symbola" "Quivira" "Apple Symbols" "Cambria Math"))
 )
 
 (unicode-fonts-setup)
