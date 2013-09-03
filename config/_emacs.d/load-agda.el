@@ -78,22 +78,31 @@
   ;; ------------------------------------------
   ;; = (C) Reset the color for agda-highlight
   ;; ------------------------------------------
-  '(agda2-highlight-datatype-face       ((t (:foreground "beige"))))
-  '(agda2-highlight-function-face       ((t (:foreground "beige"))))
-  '(agda2-highlight-primitive-face      ((t (:foreground "beige"))))
-  '(agda2-highlight-primitive-type-face ((t (:foreground "beige"))))
-  '(agda2-highlight-record-face         ((t (:foreground "beige"))))
-  '(agda2-highlight-postulate-face      ((t (:foreground "beige"))))
+  '(agda2-highlight-datatype-face       ((t (:foreground "DarkGoldenrod2"))))
+  '(agda2-highlight-function-face       ((t (:foreground "DarkGoldenrod2"))))
+  
+  '(agda2-highlight-record-face         ((t (:foreground "DarkGoldenrod2"))))
+  '(agda2-highlight-postulate-face      ((t (:foreground "DarkGoldenrod2"))))
+
   '(agda2-highlight-module-face         ((t (:foreground "violet"))))
   '(agda2-highlight-number-face         ((t (:foreground "violet"))))
-  '(agda2-highlight-keyword-face        ((t (:foreground "orange1"))))
+  '(agda2-highlight-string-face         ((t (:foreground "violet"))))
+
+  '(agda2-highlight-keyword-face        ((t (:foreground "SteelBlue"))))  
+  
   '(agda2-highlight-inductive-constructor-face 
-    ((t (:foreground "lime green"))))
+    ((t (:foreground "DarkGoldenrod2"))))
+  '(agda2-highlight-coinductive-constructor-face 
+    ((t (:foreground "DarkGoldenrod2"))))
+
+  '(agda2-highlight-primitive-face      ((t (:foreground "LemonChiffon2"))))
+  '(agda2-highlight-primitive-type-face ((t (:foreground "LemonChiffon2"))))
+
   '(agda2-highlight-symbol-face 
     ((((background light))
      (:foreground "gray25"))
     (((background dark))
-     (:foreground "salmon1"))))
+     (:foreground "gray50"))))
 )
 
 ;; +++++ all available agda-faces +++++

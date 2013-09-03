@@ -1,21 +1,67 @@
 
 (add-to-list 'load-path "~/.emacs.d/")
-(add-to-list 'load-path "~/.emacs.d/utils")
-(add-to-list 'load-path "~/.emacs.d/modes")
+(add-to-list 'load-path "~/.emacs.d/utils/")
+(add-to-list 'load-path "~/.emacs.d/utils/apel-10.8/")
+(add-to-list 'load-path "~/.emacs.d/utils/elscreen/")
+(add-to-list 'load-path "~/.emacs.d/utils/color-theme/")
+(add-to-list 'load-path "~/.emacs.d/modes/")
 
 ;; --------------------------
 ;; === reset default face ===
 ;; --------------------------
 
 (custom-set-faces
-  '(default ((t (:height 180 :width normal :family "DejaVu Sans Mono"))))
+  '(default ((t (:height 220 :width normal :family "DejaVu Sans Mono"))))
   ; '(default ((t (:stipple nil :background "grey20" :foreground "grey90" :inverse-video nil
   ;   :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal
   ;   :height 240 :width normal :family "DejaVu Sans Mono"))))
 )
 
-;(require 'unicode-fonts)
-;(unicode-fonts-setup)
+;; -------------------------------
+;; === setup unicode  mapping ===
+;; -------------------------------
+
+(require 'unicode-fonts)
+
+;; -------------------------------------------------
+;; !WARNING! !WARNING! !WARNING! !WARNING! !WARNING! 
+;; -------------------------------------------------
+;; Since the unicode-fonts will override (almost) 
+;; whole unicode mapping, it will spend a lot of 
+;; time to open emacs. I setup some custom variables 
+;; for speeding up. 
+
+(custom-set-variables
+  ; ignore unicode mapping overriding
+  '(unicode-fonts-ignore-overrides 't)
+  ; Dangeous! set to 'first or 'all if you're 
+  ; not sure whether you already have all 
+  ; necessary fonts or not.
+  '(unicode-fonts-existence-checks 'none) 
+  ; Fonts I used
+  '(unicode-fonts-restrict-to-fonts 
+   '("Aegean" "Aegyptus" "Akkadian"
+     "Code2000" "Code2001"
+     "DejaVu Sans Mono" "DejaVu Sans"    
+     "Geeza Pro" "Osaka" "SimHei" 
+     "Symbola" "Quivira" "Apple Symbols"))
+)
+
+(unicode-fonts-setup)
+
+;; ------------------------
+;; === Using elscreen ===
+;; ------------------------
+
+(load "elscreen" "ElScreen" t)
+(load "elscreen-speedbar" "ElScree-Speedbar" t)
+
+;; work with elscreen 
+(global-set-key [s-M-left] 'elscreen-previous)
+(global-set-key [s-M-right] 'elscreen-next)
+(global-set-key [s-M-o] 'elscreen-find-file) 
+(global-set-key [s-w] 'elscreen-kill)
+(global-set-key [s-s] 'save-buffer) 
 
 ;; -------------------
 ;; === color theme ===
@@ -90,6 +136,5 @@
 ;; -----------------
 
 (load-file "~/.emacs.d/load-agda.el")
-(require 'agda2-mode)
 
 
