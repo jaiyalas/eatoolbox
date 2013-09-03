@@ -56,12 +56,18 @@
 (load "elscreen" "ElScreen" t)
 (load "elscreen-speedbar" "ElScree-Speedbar" t)
 
+(setq mac-option-key-is-meta t)
+
 ;; work with elscreen 
-(global-set-key [s-M-left] 'elscreen-previous)
+(global-set-key [s-left]    'elscreen-previous)
+(global-set-key [s-M-left]  'elscreen-previous)
+(global-set-key [s-right]   'elscreen-next)
 (global-set-key [s-M-right] 'elscreen-next)
-(global-set-key [s-M-o] 'elscreen-find-file) 
-(global-set-key [s-w] 'elscreen-kill)
-(global-set-key [s-s] 'save-buffer) 
+
+(global-set-key [s-up]      'elscreen-kill) 
+(global-set-key [s-down]    'save-buffer)
+
+(global-set-key [s-return]       'elscreen-find-file) 
 
 ;; -------------------
 ;; === color theme ===
