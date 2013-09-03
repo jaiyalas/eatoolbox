@@ -1,3 +1,13 @@
+;; -------------------------------------------------
+;; !WARNING! !WARNING! !WARNING! !WARNING! !WARNING! 
+;; -------------------------------------------------
+;;
+;;    Specialized for my own good. (jaiyalas)
+;;
+;; -------------------------------------------------
+;; !WARNING! !WARNING! !WARNING! !WARNING! !WARNING! 
+;; -------------------------------------------------
+
 ;;; unicode-fonts.el --- Configure Unicode fonts
 ;;
 ;; Copyright (c) 2012 Roland Walker
@@ -1317,339 +1327,339 @@ Set to nil to disable."
 
 (defcustom unicode-fonts-block-font-mapping
   '(("Aegean Numbers"                                   (
-                                                         "Aegean"
+                                                         ; - "Aegean"
                                                          "Quivira"
                                                          ))
     ("Alchemical Symbols"                               (
-                                                         "Symbola"
+                                                         ; - "Symbola"
                                                          "Quivira"
                                                          ))
     ("Alphabetic Presentation Forms"                    (
                                                          "DejaVu Sans:width=condensed"
-                                                         "Arial Unicode MS"
+                                                         ; - "Arial Unicode MS"
                                                          "Quivira"
                                                          ))
     ("Ancient Greek Musical Notation"                   (
-                                                         "Musica"
-                                                         "Symbola"
+                                                         ; - "Musica"
+                                                         ; - "Symbola"
                                                          "Quivira"
                                                          ))
     ("Ancient Greek Numbers"                            (
-                                                         "Apple Symbols"
-                                                         "Aegean"
+                                                         ; - "Apple Symbols"
+                                                         ; - "Aegean"
                                                          "Quivira"
                                                          ))
     ("Ancient Symbols"                                  (
-                                                         "Aegean"
+                                                         ; - "Aegean"
                                                          "Quivira"
                                                          ))
     ;; ("Arabic Extended-A"                             (""))                           ; todo
     ;; ("Arabic Mathematical Alphabetic Symbols"        (""))                           ; todo
     ("Arabic Presentation Forms-A"                      (                               ; todo insufficient free coverage
+                                                         ; - "Arial Unicode MS"             ; 593/611
+                                                         ; - "Microsoft Sans Serif"
+                                                         ; - "Tahoma"
+                                                         ; - "Kufi Standard GK"
+                                                         ; - "Andalus"
+                                                         ; - "Arabic Typesetting"
+                                                         ; - "Adobe Arabic"                 ; 171/611
+                                                         ; - "DecoType Naskh"               ; 57/611
+                                                         ; - "Al Bayan"                     ; 62/611
+                                                         ; - "DejaVu Sans Mono"             ; 72/611
+                                                         ; - "DejaVu Sans:width=condensed"  ; 98/611
+                                                         ; - "MPH 2B Damase"                ; 24/611
+                                                         ; - "Code2000"                     ; 155/611
                                                          "Geeza Pro"                    ; 595/611
-                                                         "Arial Unicode MS"             ; 593/611
-                                                         "Microsoft Sans Serif"
-                                                         "Tahoma"
-                                                         "Kufi Standard GK"
-                                                         "Andalus"
-                                                         "Arabic Typesetting"
-                                                         "Adobe Arabic"                 ; 171/611
-                                                         "DecoType Naskh"               ; 57/611
-                                                         "Al Bayan"                     ; 62/611
-                                                         "DejaVu Sans Mono"             ; 72/611
-                                                         "DejaVu Sans:width=condensed"  ; 98/611
-                                                         "MPH 2B Damase"                ; 24/611
-                                                         "Code2000"                     ; 155/611
                                                          ))
     ("Arabic Presentation Forms-B"                      (
-                                                         "DejaVu Sans Mono"             ; 140/140
+                                                         ; - "DejaVu Sans Mono"             ; 140/140
                                                          "Geeza Pro"                    ; 140/140
-                                                         "Adobe Arabic"                 ; 125/140
-                                                         "Arial Unicode MS"
-                                                         "Microsoft Sans Serif"
-                                                         "Kufi Standard GK"
-                                                         "DejaVu Sans:width=condensed"  ; 140/140
-                                                         "DecoType Naskh"               ; 89/140
+                                                         ; - "Adobe Arabic"                 ; 125/140
+                                                         ; - "Arial Unicode MS"
+                                                         ; - "Microsoft Sans Serif"
+                                                         ; - "Kufi Standard GK"
+                                                         ; - "DejaVu Sans:width=condensed"  ; 140/140
+                                                         ; - "DecoType Naskh"               ; 89/140
                                                          ))
     ("Arabic Supplement"                                (
-                                                         "Courier New"
-                                                         "Simplified Arabic Fixed"
-                                                         "Simplified Arabic"
+                                                         ; - "Courier New"
+                                                         ; - "Simplified Arabic Fixed"
+                                                         ; - "Simplified Arabic"
                                                          "Geeza Pro"
-                                                         "Damascus"
-                                                         "Andalus"
-                                                         "Arabic Typesetting"
-                                                         "Traditional Arabic"
-                                                         "Adobe Arabic"                 ; 30/48
-                                                         "Scheherazade"
-                                                         "Tahoma"
-                                                         "Microsoft Sans Serif"
-                                                         "MPH 2B Damase"
+                                                         ; - "Damascus"
+                                                         ; - "Andalus"
+                                                         ; - "Arabic Typesetting"
+                                                         ; - "Traditional Arabic"
+                                                         ; - "Adobe Arabic"                 ; 30/48
+                                                         ; - "Scheherazade"
+                                                         ; - "Tahoma"
+                                                         ; - "Microsoft Sans Serif"
+                                                         ; - "MPH 2B Damase"
                                                          ))
     ("Arabic"                                           (
-                                                         "Courier New"
-                                                         "Simplified Arabic Fixed"
-                                                         "Simplified Arabic"
-                                                         "Adobe Arabic"                 ; 209/252
-                                                         "Geeza Pro"
-                                                         "Baghdad"                      ; 81/252
-                                                         "Damascus"
-                                                         "Al Bayan"                     ; 79/252
-                                                         "Andalus"
-                                                         "Arabic Typesetting"
-                                                         "Traditional Arabic"
-                                                         "Scheherazade"
+                                                         ; - "Courier New"
+                                                         ; - "Simplified Arabic Fixed"
+                                                         ; - "Simplified Arabic"
+                                                         ; - "Adobe Arabic"                 ; 209/252
+                                                         ; - "Baghdad"                      ; 81/252
+                                                         ; - "Damascus"
+                                                         ; - "Al Bayan"                     ; 79/252
+                                                         ; - "Andalus"
+                                                         ; - "Arabic Typesetting"
+                                                         ; - "Traditional Arabic"
+                                                         ; - "Scheherazade"
                                                          "DejaVu Sans Mono"
                                                          "DejaVu Sans:width=condensed"
-                                                         "Arial Unicode MS"
-                                                         "Nadeem"
-                                                         "Tahoma"
-                                                         "Microsoft Sans Serif"
-                                                         "MPH 2B Damase"
-                                                         "Kufi Standard GK"
-                                                         "DecoType Naskh"
-                                                         "Koodak"
+                                                         ; - "Arial Unicode MS"
+                                                         ; - "Nadeem"
+                                                         ; - "Tahoma"
+                                                         ; - "Microsoft Sans Serif"
+                                                         ; - "MPH 2B Damase"
+                                                         ; - "Kufi Standard GK"
+                                                         ; - "DecoType Naskh"
+                                                         ; - "Koodak"
+                                                         ; - "Geeza Pro"
                                                          ))
     ("Armenian"                                         (
-                                                         "Mshtakan"
-                                                         "Sylfaen"
-                                                         "DejaVu Sans:width=condensed"
+                                                         ; - "Mshtakan"
+                                                         ; - "Sylfaen"
+                                                         ; - "DejaVu Sans:width=condensed"
                                                          "Quivira"
-                                                         "MPH 2B Damase"
-                                                         "Arial Unicode MS"
+                                                         ; - "MPH 2B Damase"
+                                                         ; - "Arial Unicode MS"
                                                          ))
     ("Arrows"                                           (
                                                          "DejaVu Sans Mono"
-                                                         "Apple Symbols"
-                                                         "Cambria Math"                 ; 112/112
-                                                         "DejaVu Sans:width=condensed"
-                                                         "Arial Unicode MS"
-                                                         "Symbola"
-                                                         "Quivira"
+                                                         ; - "Apple Symbols"
+                                                         ; - "Cambria Math"                 ; 112/112
+                                                         ; - "DejaVu Sans:width=condensed"
+                                                         ; - "Arial Unicode MS"
+                                                         ; - "Symbola"
+                                                         ; - "Quivira"
                                                          ))
-    ("Avestan"                                          (
-                                                         "Ahuramzda"
-                                                         ))
-    ("Balinese"                                         (
-                                                         "Aksara Bali"
-                                                         ))
+    ; - ("Avestan"                                          (
+    ; -                                                      "Ahuramzda"
+    ; -                                                      ))
+    ; - ("Balinese"                                         (
+    ; -                                                      "Aksara Bali"
+    ; -                                                      ))
     ;; ("Bamum Supplement"                              (""))                           ; todo
     ;; ("Bamum"                                         (""))                           ; todo
     ;; ("Basic Latin"                                   (""))                           ; covered by the default font
     ;; ("Batak"                                         (""))                           ; todo
-    ("Bengali"                                          (
-                                                         "Bangla Sangam MN"
-                                                         "Vrinda"
-                                                         "Mukti Narrow"
-                                                         "Akaash"
-                                                         "Arial Unicode MS"
-                                                         "Code2000"
-                                                         ))
+    ; - ("Bengali"                                          (
+    ; -                                                      "Bangla Sangam MN"
+    ; -                                                      "Vrinda"
+    ; -                                                      "Mukti Narrow"
+    ; -                                                      "Akaash"
+    ; -                                                      "Arial Unicode MS"
+    ; -                                                      "Code2000"
+    ; -                                                      ))
     ("Block Elements"                                   (
                                                          "DejaVu Sans Mono"
                                                          "DejaVu Sans:width=condensed"
-                                                         "Apple Symbols"
-                                                         "Symbola"
-                                                         "Quivira"
+                                                         ; - "Apple Symbols"
+                                                         ; - "Symbola"
+                                                         ; - "Quivira"
                                                          ))
-    ("Bopomofo Extended"                                (
-                                                         "MingLiU"
-                                                         "SimHei"
-                                                         "FangSong"
-                                                         "SimSun"
-                                                         "DFKai-SB"
-                                                         "Microsoft JhengHei"
-                                                         "BabelStone Han"               ; 27/27
-                                                         ))
+    ; - ("Bopomofo Extended"                                (
+    ; -                                                      "MingLiU"
+    ; -                                                      "SimHei"
+    ; -                                                      "FangSong"
+    ; -                                                      "SimSun"
+    ; -                                                      "DFKai-SB"
+    ; -                                                      "Microsoft JhengHei"
+    ; -                                                      "BabelStone Han"               ; 27/27
+    ; -                                                      ))
     ("Bopomofo"                                         (                               ; prefer traditional
-                                                         "Lantinghei TC"
-                                                         "MingLiU"
+                                                         ; - "Lantinghei TC"
+                                                         ; - "MingLiU"
                                                          "SimHei"
-                                                         "LiSong Pro"                   ; 37/41
-                                                         "FangSong"
-                                                         "SimSun"
-                                                         "DFKai-SB"
-                                                         "WenQuanYi Zen Hei Mono"       ; 41/41
-                                                         "Microsoft JhengHei"
-                                                         "Microsoft YaHei"
-                                                         "Lantinghei SC"
-                                                         "Arial Unicode MS"
-                                                         "BabelStone Han"               ; 41/41
+                                                         ; - "LiSong Pro"                   ; 37/41
+                                                         ; - "FangSong"
+                                                         ; - "SimSun"
+                                                         ; - "DFKai-SB"
+                                                         ; - "WenQuanYi Zen Hei Mono"       ; 41/41
+                                                         ; - "Microsoft JhengHei"
+                                                         ; - "Microsoft YaHei"
+                                                         ; - "Lantinghei SC"
+                                                         ; - "Arial Unicode MS"
+                                                         ; - "BabelStone Han"               ; 41/41
                                                          ))
     ("Box Drawing"                                      (
                                                          "DejaVu Sans Mono"
                                                          "DejaVu Sans"
-                                                         "Symbola"
-                                                         "Quivira"
+                                                         ; - "Symbola"
+                                                         ; - "Quivira"
                                                          ))
     ;; ("Brahmi"                                        (""))
     ("Braille Patterns"                                 (
                                                          "Quivira"
-                                                         "DejaVu Sans:width=condensed"
-                                                         "Apple Symbols"
-                                                         "Symbola"
+                                                         ; - "DejaVu Sans:width=condensed"
+                                                         ; - "Apple Symbols"
+                                                         ; - "Symbola"
                                                          ))
-    ("Buginese"                                         (
-                                                         "MPH 2B Damase"
-                                                         ))
+    ; - ("Buginese"                                         (
+    ; -                                                      "MPH 2B Damase"
+    ; -                                                      ))
     ("Buhid"                                            (
                                                          "Quivira"
                                                          ))
     ("Byzantine Musical Symbols"                        (
-                                                         "Musica"
+                                                         ; - "Musica"
                                                          "Symbola"
                                                          ))
     ("CJK Compatibility Forms"                          (
-                                                         "WenQuanYi Zen Hei Mono"       ; 32/32
-                                                         "Lantinghei SC"
+                                                         ; - "WenQuanYi Zen Hei Mono"       ; 32/32
+                                                         ; - "Lantinghei SC"
                                                          "SimHei"
-                                                         "FangSong"
-                                                         "SimSun"
-                                                         "LiSong Pro"                   ; 26/32
-                                                         "Baoli SC"                     ; 19/32
-                                                         "Microsoft YaHei"
-                                                         "Lantinghei TC"
-                                                         "BabelStone Han"               ; 32/32
-                                                         "MingLiU"
-                                                         "Microsoft JhengHei"
-                                                         "Symbola"
-                                                         "Xingkai SC"                   ; 19/32
-                                                         "DFKai-SB"
+                                                         ; - "FangSong"
+                                                         ; - "SimSun"
+                                                         ; - "LiSong Pro"                   ; 26/32
+                                                         ; - "Baoli SC"                     ; 19/32
+                                                         ; - "Microsoft YaHei"
+                                                         ; - "Lantinghei TC"
+                                                         ; - "BabelStone Han"               ; 32/32
+                                                         ; - "MingLiU"
+                                                         ; - "Microsoft JhengHei"
+                                                         ; - "Symbola"
+                                                         ; - "Xingkai SC"                   ; 19/32
+                                                         ; - "DFKai-SB"
                                                          ))
     ("CJK Compatibility Ideographs Supplement"          (
-                                                         "WenQuanYi Zen Hei Mono"       ; 542/542
+                                                         ; - "WenQuanYi Zen Hei Mono"       ; 542/542
                                                          "SimHei"
-                                                         "FangSong"
-                                                         "SimSun"
-                                                         "MingLiU"
-                                                         "HanaMinA"                     ; 542/542
-                                                         "Hiragino Kaku Gothic Pro"
-                                                         "Hiragino Maru Gothic Pro"
-                                                         "Hiragino Mincho Pro"
-                                                         "Microsoft JhengHei"
-                                                         "LiSong Pro"                   ; 11/542
+                                                         ; - "FangSong"
+                                                         ; - "SimSun"
+                                                         ; - "MingLiU"
+                                                         ; - "Hiragino Kaku Gothic Pro"
+                                                         ; - "Hiragino Maru Gothic Pro"
+                                                         ; - "Hiragino Mincho Pro"
+                                                         ; - "HanaMinA"                     ; 542/542
+                                                         ; - "Microsoft JhengHei"
+                                                         ; - "LiSong Pro"                   ; 11/542
                                                          ))
     ("CJK Compatibility Ideographs"                     (
                                                          "SimHei"
-                                                         "FangSong"
-                                                         "SimSun"
-                                                         "Microsoft YaHei"
-                                                         "WenQuanYi Zen Hei Mono"       ; 455/472
-                                                         "BabelStone Han"               ; 472/472
-                                                         "UnBatang"                     ; 268/472
-                                                         "MingLiU"
-                                                         "Microsoft JhengHei"
-                                                         "Arial Unicode MS"
-                                                         "Lantinghei SC"
-                                                         "HanaMinA"                     ; 472/472
+                                                         ; - "FangSong"
+                                                         ; - "SimSun"
+                                                         ; - "Microsoft YaHei"
+                                                         ; - "WenQuanYi Zen Hei Mono"       ; 455/472
+                                                         ; - "BabelStone Han"               ; 472/472
+                                                         ; - "UnBatang"                     ; 268/472
+                                                         ; - "MingLiU"
+                                                         ; - "Microsoft JhengHei"
+                                                         ; - "Arial Unicode MS"
+                                                         ; - "Lantinghei SC"
+                                                         ; - "HanaMinA"                     ; 472/472
                                                          ))
     ("CJK Compatibility"                                (
                                                          "SimHei"
-                                                         "FangSong"
-                                                         "SimSun"
-                                                         "MingLiU"
-                                                         "Microsoft JhengHei"
-                                                         "Lantinghei SC"
-                                                         "Lantinghei TC"
-                                                         "Arial Unicode MS"
-                                                         "WenQuanYi Zen Hei Mono"       ; 154/256
-                                                         "HanaMinA"                     ; 149/256
-                                                         "BabelStone Han"               ; 73/256
+                                                         ; - "FangSong"
+                                                         ; - "SimSun"
+                                                         ; - "Microsoft JhengHei"
+                                                         ; - "Lantinghei SC"
+                                                         ; - "Lantinghei TC"
+                                                         ; - "Arial Unicode MS"
+                                                         ; - "WenQuanYi Zen Hei Mono"       ; 154/256
+                                                         ; - "HanaMinA"                     ; 149/256
+                                                         ; - "MingLiU"
+                                                         ; - "BabelStone Han"               ; 73/256
                                                          ))
     ("CJK Radicals Supplement"                          (
-                                                         "WenQuanYi Zen Hei Mono"       ; 115/115
+                                                         ; - "WenQuanYi Zen Hei Mono"       ; 115/115
                                                          "SimHei"
-                                                         "FangSong"
-                                                         "SimSun"
-                                                         "Microsoft YaHei"
-                                                         "HanaMinA"                     ; 115/115
-                                                         "BabelStone Han"               ; 115/115
-                                                         "MingLiU"
-                                                         "Microsoft JhengHei"
-                                                         "DFKai-SB"
-                                                         "Apple Symbols"
+                                                         ; - "FangSong"
+                                                         ; - "SimSun"
+                                                         ; - "Microsoft YaHei"
+                                                         ; - "HanaMinA"                     ; 115/115
+                                                         ; - "BabelStone Han"               ; 115/115
+                                                         ; - "MingLiU"
+                                                         ; - "Microsoft JhengHei"
+                                                         ; - "DFKai-SB"
+                                                         ; - "Apple Symbols"
                                                          ))
-    ("CJK Strokes"                                      (
-                                                         "WenQuanYi Zen Hei Mono"       ; 36/36
-                                                         "HanaMinA"                     ; 36/36
-                                                         "BabelStone Han"               ; 26/26
-                                                         ))
+    ; - ("CJK Strokes"                                      (
+    ; -                                                      ; - "WenQuanYi Zen Hei Mono"       ; 36/36
+    ; -                                                      ; - "HanaMinA"                     ; 36/36
+    ; -                                                      ; - "BabelStone Han"               ; 26/26
+    ; -                                                      ))
     ("CJK Symbols and Punctuation"                      (
-                                                         "Lantinghei SC"
+                                                         ; - "Lantinghei SC"
                                                          "SimHei"
-                                                         "FangSong"
-                                                         "SimSun"
-                                                         "HanaMinA"                     ; 45/64
-                                                         "WenQuanYi Zen Hei Mono"       ; 38/64
-                                                         "LiSong Pro"                   ; 33/64
-                                                         "ST Fangsong"                  ; 35/64
-                                                         "Microsoft YaHei"
-                                                         "Lantinghei TC"
-                                                         "MingLiU"
-                                                         "Arial Unicode MS"
-                                                         "PC Myungjo"
-                                                         "BabelStone Han"               ; 54/64
-                                                         "Osaka:spacing=m"
+                                                         ; - "FangSong"
+                                                         ; - "SimSun"
+                                                         ; - "HanaMinA"                     ; 45/64
+                                                         ; - "WenQuanYi Zen Hei Mono"       ; 38/64
+                                                         ; - "LiSong Pro"                   ; 33/64
+                                                         ; - "ST Fangsong"                  ; 35/64
+                                                         ; - "Microsoft YaHei"
+                                                         ; - "Lantinghei TC"
+                                                         ; - "MingLiU"
+                                                         ; - "Arial Unicode MS"
+                                                         ; - "PC Myungjo"
+                                                         ; - "BabelStone Han"               ; 54/64
+                                                         ; - "Osaka:spacing=m"
                                                          ))
     ("CJK Unified Ideographs"                           (
-                                                         "WenQuanYi Zen Hei Mono"       ; 20932/20941
-                                                         "Lantinghei SC"
-                                                         "Songti SC"                    ; 20910/20941
+                                                         ; - "WenQuanYi Zen Hei Mono"       ; 20932/20941
+                                                         ; - "Lantinghei SC"
+                                                         ; - "Songti SC"                    ; 20910/20941
                                                          "SimHei"
-                                                         "FangSong"
-                                                         "ST Fangsong"                  ; 20910/20941
-                                                         "SimSun"
-                                                         "LiSong Pro"                   ; 17595/20941
-                                                         "Baoli SC"                     ; 7103/20941
-                                                         "HanaMinA"                     ; 20941/20941
-                                                         "BabelStone Han"               ; 19051/20941
-                                                         "Apple LiGothic"               ; 13060/20941
-                                                         "Lantinghei TC"
-                                                         "MingLiU"
-                                                         "Microsoft JhengHei"
-                                                         "DFKai-SB"
-                                                         "Arial Unicode MS"
-                                                         "Xingkai SC"                   ; 7103/20941
-                                                         "GB18030 Bitmap"               ; 20902/20941
-                                                         "UnBatang"                     ; 4260/20941
+                                                         ; - "FangSong"
+                                                         ; - "ST Fangsong"                  ; 20910/20941
+                                                         ; - "SimSun"
+                                                         ; - "LiSong Pro"                   ; 17595/20941
+                                                         ; - "Baoli SC"                     ; 7103/20941
+                                                         ; - "HanaMinA"                     ; 20941/20941
+                                                         ; - "BabelStone Han"               ; 19051/20941
+                                                         ; - "Apple LiGothic"               ; 13060/20941
+                                                         ; - "Lantinghei TC"
+                                                         ; - "MingLiU"
+                                                         ; - "Microsoft JhengHei"
+                                                         ; - "DFKai-SB"
+                                                         ; - "Arial Unicode MS"
+                                                         ; - "Xingkai SC"                   ; 7103/20941
+                                                         ; - "GB18030 Bitmap"               ; 20902/20941
+                                                         ; - "UnBatang"                     ; 4260/20941
                                                          ))
     ("CJK Unified Ideographs Extension A"               (
                                                          "SimHei"
-                                                         "FangSong"
-                                                         "ST Fangsong"                  ; 6582/6646
-                                                         "SimSun"
-                                                         "Songti SC"                    ; 6582/6646
-                                                         "Microsoft YaHei"
-                                                         "MingLiU"
-                                                         "Microsoft JhengHei"
-                                                         "Code2000"
-                                                         "DFKai-SB"
-                                                         "BabelStone Han"               ; 691/6646
-                                                         "GB18030 Bitmap"               ; 6578/6646
+                                                         ; - "FangSong"
+                                                         ; - "ST Fangsong"                  ; 6582/6646
+                                                         ; - "SimSun"
+                                                         ; - "Songti SC"                    ; 6582/6646
+                                                         ; - "Microsoft YaHei"
+                                                         ; - "MingLiU"
+                                                         ; - "Microsoft JhengHei"
+                                                         ; - "Code2000"
+                                                         ; - "DFKai-SB"
+                                                         ; - "BabelStone Han"               ; 691/6646
+                                                         ; - "GB18030 Bitmap"               ; 6578/6646
                                                          ))
-    ("CJK Unified Ideographs Extension B"               (
-                                                         "SimHei"
-                                                         "FangSong"
-                                                         "SimSun"
-                                                         "LiSong Pro"                   ; 1640/42711
-                                                         "Microsoft YaHei"
-                                                         "HanaMinB"                     ; 42711/42711
-                                                         "Code2002"                     ; 20158/24711
-                                                         "MingLiU"
-                                                         "Microsoft JhengHei"
-                                                         "BabelStone Han"               ; 625/24711
-                                                         "DFKai-SB"
-                                                         ))
-    ("CJK Unified Ideographs Extension C"               (
-                                                         "HanaMinB"                     ; 4149/4149
-                                                         "BabelStone Han"               ; 399/4149
-                                                         ))
-    ("CJK Unified Ideographs Extension D"               (
-                                                         "HanaMinB"                     ; 222/222
-                                                         "BabelStone Han"               ; 222/222
-                                                         ))
+    ; - ("CJK Unified Ideographs Extension B"               (
+    ; -                                                      "SimHei"
+    ; -                                                      "FangSong"
+    ; -                                                      "SimSun"
+    ; -                                                      "LiSong Pro"                   ; 1640/42711
+    ; -                                                      "Microsoft YaHei"
+    ; -                                                      "HanaMinB"                     ; 42711/42711
+    ; -                                                      "Code2002"                     ; 20158/24711
+    ; -                                                      "MingLiU"
+    ; -                                                      "Microsoft JhengHei"
+    ; -                                                      "BabelStone Han"               ; 625/24711
+    ; -                                                      "DFKai-SB"
+    ; -                                                      ))
+    ; - ("CJK Unified Ideographs Extension C"               (
+    ; -                                                      "HanaMinB"                     ; 4149/4149
+    ; -                                                      "BabelStone Han"               ; 399/4149
+    ; -                                                      ))
+    ; - ("CJK Unified Ideographs Extension D"               (
+    ; -                                                      "HanaMinB"                     ; 222/222
+    ; -                                                      "BabelStone Han"               ; 222/222
+    ; -                                                      ))
     ("Carian"                                           (
-                                                         "Aegean"
+                                                         ; - "Aegean"
                                                          "Quivira"
                                                          ))
     ;; ("Chakma"                                        (""))                           ; todo
@@ -1657,55 +1667,55 @@ Set to nil to disable."
                                                          "Code2000"
                                                          ))
     ("Cherokee"                                         (
-                                                         "Plantagenet Cherokee"
-                                                         "MPH 2B Damase"
+                                                         ; - "Plantagenet Cherokee"
+                                                         ; - "MPH 2B Damase"
                                                          "Quivira"
                                                          ))
-    ("Combining Diacritical Marks Supplement"           (
-                                                         "Consolas"                     ; 13/128
-                                                         "Courier New"                  ;  4/128
-                                                         "Doulos SIL"                   ; 14/128
-                                                         "DejaVu Sans:width=condensed"  ;  6/128
-                                                         "Segoe UI"                     ;  6/128
-                                                         "Tahoma"                       ; 13/128
-                                                         "Code2000"                     ; 13/128
-                                                         ))
+    ; - ("Combining Diacritical Marks Supplement"           (
+    ; -                                                      "Consolas"                     ; 13/128
+    ; -                                                      "Courier New"                  ;  4/128
+    ; -                                                      "Doulos SIL"                   ; 14/128
+    ; -                                                      "DejaVu Sans:width=condensed"  ;  6/128
+    ; -                                                      "Segoe UI"                     ;  6/128
+    ; -                                                      "Tahoma"                       ; 13/128
+    ; -                                                      "Code2000"                     ; 13/128
+    ; -                                                      ))
     ("Combining Diacritical Marks for Symbols"          (
-                                                         "Cambria Math"                 ; 22/33
+                                                         ; - "Cambria Math"                 ; 22/33
                                                          "Symbola"
                                                          ))
     ("Combining Diacritical Marks"                      (
-                                                         "Monaco"
-                                                         "Consolas"
-                                                         "Cambria Math"                 ; 110/112
-                                                         "Courier New"
-                                                         "DejaVu Sans:width=condensed"
+                                                         ; - "Monaco"
+                                                         ; - "Consolas"
+                                                         ; - "Cambria Math"                 ; 110/112
+                                                         ; - "Courier New"
+                                                         ; - "DejaVu Sans:width=condensed"
                                                          "DejaVu Sans Mono"
-                                                         "Tahoma"
-                                                         "Microsoft Sans Serif"
-                                                         "Arial"
-                                                         "Quivira"
+                                                         ; - "Tahoma"
+                                                         ; - "Microsoft Sans Serif"
+                                                         ; - "Arial"
+                                                         ; - "Quivira"
                                                          ))
     ("Combining Half Marks"                             (
-                                                         "Monaco"
-                                                         "Consolas"
+                                                         ; - "Monaco"
+                                                         ; - "Consolas"
                                                          "Symbola"
                                                          ))
-    ("Common Indic Number Forms"                        (
-                                                         "Siddhanta"
-                                                         ))
+    ; - ("Common Indic Number Forms"                        (
+    ; -                                                      "Siddhanta"
+    ; -                                                      ))
     ("Control Pictures"                                 (
-                                                         "Apple Symbols"
-                                                         "Arial Unicode MS"
+                                                         ; - "Apple Symbols"
+                                                         ; - "Arial Unicode MS"
                                                          "Symbola"
                                                          "Quivira"
                                                          ))
     ("Counting Rod Numerals"                            (
-                                                         "WenQuanYi Zen Hei Mono"       ; 18/18
-                                                         "Apple Symbols"
+                                                         ; - "WenQuanYi Zen Hei Mono"       ; 18/18
+                                                         ; - "Apple Symbols"
                                                          "Symbola"
                                                          "Quivira"
-                                                         "Code2001"                     ; 18/18
+                                                         ; - "Code2001"                     ; 18/18
                                                          ))
     ("Cuneiform Numbers and Punctuation"                (
                                                          "Akkadian"
@@ -1714,16 +1724,16 @@ Set to nil to disable."
                                                          "Akkadian"
                                                          ))
     ("Currency Symbols"                                 (
-                                                         "Monaco"
-                                                         "Consolas"                     ; 22/
+                                                         ; - "Monaco"
+                                                         ; - "Consolas"                     ; 22/
                                                          "DejaVu Sans Mono"
                                                          "DejaVu Sans:width=condensed"
-                                                         "Apple Symbols"
-                                                         "Symbola"
-                                                         "Quivira"
+                                                         ; - "Apple Symbols"
+                                                         ; - "Symbola"
+                                                         ; - "Quivira"
                                                          ))
     ("Cypriot Syllabary"                                (
-                                                         "Aegean"
+                                                         ; - "Aegean"
                                                          "Code2001"                     ; 55/55
                                                          ))
     ("Cyrillic Extended-A"                              (
@@ -1733,412 +1743,412 @@ Set to nil to disable."
                                                          "Quivira"
                                                          ))
     ("Cyrillic Supplement"                              (
-                                                         "Consolas"                     ; 20/40
-                                                         "Courier New"
-                                                         "Calibri"
+                                                         ; - "Consolas"                     ; 20/40
+                                                         ; - "Courier New"
+                                                         ; - "Calibri"
                                                          "DejaVu Sans:width=condensed"
-                                                         "Doulos SIL"                   ; 34/40
-                                                         "Symbola"
-                                                         "Quivira"
+                                                         ; - "Doulos SIL"                   ; 34/40
+                                                         ; - "Symbola"
+                                                         ; - "Quivira"
                                                          ))
     ("Cyrillic"                                         (
-                                                         "Consolas"                     ; 255/256
-                                                         "Monaco"                       ; 191/256
-                                                         "DejaVu Sans Mono"             ; 180/256
+                                                         ; - "Consolas"                     ; 255/256
+                                                         ; - "Monaco"                       ; 191/256
+                                                         ; - "DejaVu Sans Mono"             ; 180/256
                                                          "DejaVu Sans:width=condensed"  ; 256/256
-                                                         "Courier New"                  ; 118/256
-                                                         "Calibri"                      ; 255/256
-                                                         "Microsoft Sans Serif"         ; 246/256
-                                                         "Code2000"                     ; 256/256
-                                                         "Arial Unicode MS"             ; 226/256
-                                                         "Doulos SIL"                   ; 220/256
-                                                         "Symbola"                      ; 256/256
-                                                         "Charcoal CY"                  ; 94/256
-                                                         "Geneva CY"                    ; 94/256
+                                                         ; - "Courier New"                  ; 118/256
+                                                         ; - "Calibri"                      ; 255/256
+                                                         ; - "Microsoft Sans Serif"         ; 246/256
+                                                         ; - "Code2000"                     ; 256/256
+                                                         ; - "Arial Unicode MS"             ; 226/256
+                                                         ; - "Doulos SIL"                   ; 220/256
+                                                         ; - "Symbola"                      ; 256/256
+                                                         ; - "Charcoal CY"                  ; 94/256
+                                                         ; - "Geneva CY"                    ; 94/256
                                                          ))
     ("Deseret"                                          (
-                                                         "Apple Symbols"
-                                                         "Analecta"
+                                                         ; - "Apple Symbols"
+                                                         ; - "Analecta"
                                                          "Code2001"                     ; 80/80
                                                          ))
-    ("Devanagari Extended"                              (
-                                                         "Siddhanta"                    ; 28/28
-                                                         ))
-    ("Devanagari"                                       (
-                                                         "Devanagari Sangam MN"
-                                                         "Devanagari MT"
-                                                         "Mangal"
-                                                         "Samyak Devanagari"
-                                                         "Samyak"
-                                                         "Siddhanta"                    ; 127/127
-                                                         "Arial Unicode MS"
-                                                         ))
+    ; - ("Devanagari Extended"                              (
+    ; -                                                      "Siddhanta"                    ; 28/28
+    ; -                                                      ))
+    ; - ("Devanagari"                                       (
+    ; -                                                      "Devanagari Sangam MN"
+    ; -                                                      "Devanagari MT"
+    ; -                                                      "Mangal"
+    ; -                                                      "Samyak Devanagari"
+    ; -                                                      "Samyak"
+    ; -                                                      "Siddhanta"                    ; 127/127
+    ; -                                                      "Arial Unicode MS"
+    ; -                                                      ))
     ("Dingbats"                                         (
                                                          ;; "Apple Color Emoji"
-                                                         "DejaVu Sans Mono"             ; 144/191
-                                                         "Zapf Dingbats"                ; 174/191
-                                                         "DejaVu Sans:width=condensed"  ; 174/191
-                                                         "Arial Unicode MS"             ; 160/191
-                                                         "Code2000"                     ; 174/191
+                                                         ; - "DejaVu Sans Mono"             ; 144/191
+                                                         ; - "Zapf Dingbats"                ; 174/191
+                                                         ; - "DejaVu Sans:width=condensed"  ; 174/191
+                                                         ; - "Arial Unicode MS"             ; 160/191
+                                                         ; - "Code2000"                     ; 174/191
                                                          "Symbola"                      ; 191/191
-                                                         "Quivira"                      ; 160/191
+                                                         ; - "Quivira"                      ; 160/191
                                                          ))
     ("Domino Tiles"                                     (
                                                          "DejaVu Sans:width=condensed"
-                                                         "Symbola"
-                                                         "Quivira"
+                                                         ; - "Symbola"
+                                                         ; - "Quivira"
                                                          ))
     ("Egyptian Hieroglyphs"                             (
                                                          "Aegyptus"
                                                          ))
     ("Emoticons"                                        (
                                                          ;; "Apple Color Emoji"
-                                                         "Symbola"
+                                                         ; - "Symbola"
                                                          "Quivira"
                                                          ))
     ("Enclosed Alphanumeric Supplement"                 (
                                                          "Quivira"
-                                                         "BabelStone Han"               ; 171/171
+                                                         ; - "BabelStone Han"               ; 171/171
                                                          ))
     ("Enclosed Alphanumerics"                           (
                                                          ;; "Aqua Kana"
-                                                         "Arial Unicode MS"
+                                                         ; - "Arial Unicode MS"
                                                          "Quivira"
-                                                         "BabelStone Han"               ; 160/160
+                                                         ; - "BabelStone Han"               ; 160/160
                                                          ))
     ("Enclosed CJK Letters and Months"                  (
-                                                         "WenQuanYi Zen Hei Mono"       ; 202/254
-                                                         "SimHei"
-                                                         "FangSong"
-                                                         "MingLiU"
+                                                         ; - "WenQuanYi Zen Hei Mono"       ; 202/254
+                                                         ; - "SimHei"
+                                                         ; - "FangSong"
+                                                         ; - "MingLiU"
                                                          ;; "Aqua Kana"
-                                                         "Arial Unicode MS"
-                                                         "HanaMinA"                     ; 249/254
-                                                         "BabelStone Han"               ; 191/254
+                                                         ; - "Arial Unicode MS"
+                                                         ; - "HanaMinA"                     ; 249/254
+                                                         ; - "BabelStone Han"               ; 191/254
                                                          "Quivira"
-                                                         "UnBatang"                     ; 58/254
+                                                         ; - "UnBatang"                     ; 58/254
                                                          ))
-    ("Enclosed Ideographic Supplement"                  (
-                                                         "HanaMinA"                     ; 57/57
-                                                         "BabelStone Han"               ; 57/57
-                                                         ))
-    ("Ethiopic Extended"                                (
-                                                         "Kefa"
-                                                         "Abyssinica SIL"
-                                                         "Code2000"
-                                                         ))
-    ("Ethiopic Extended-A"                              (
-                                                         "Kefa"
-                                                         "Abyssinica SIL"
-                                                         "Code2000"
-                                                         ))
-    ("Ethiopic Supplement"                              (
-                                                         "Kefa"
-                                                         "Abyssinica SIL"
-                                                         "Code2000"
-                                                         ))
-    ("Ethiopic"                                         (
-                                                         "Kefa"
-                                                         "Nyala"
-                                                         "Abyssinica SIL"
-                                                         "Ethiopia Jiret"
-                                                         "Ethiopia WashRa SemiBold"
-                                                         "Ethopic Yebse"
-                                                         "Code2000"
-                                                         ))
+    ; - ("Enclosed Ideographic Supplement"                  (
+    ; -                                                      "HanaMinA"                     ; 57/57
+    ; -                                                      "BabelStone Han"               ; 57/57
+    ; -                                                      ))
+    ; - ("Ethiopic Extended"                                (
+    ; -                                                      "Kefa"
+    ; -                                                      "Abyssinica SIL"
+    ; -                                                      "Code2000"
+    ; -                                                      ))
+    ; - ("Ethiopic Extended-A"                              (
+    ; -                                                      "Kefa"
+    ; -                                                      "Abyssinica SIL"
+    ; -                                                      "Code2000"
+    ; -                                                      ))
+    ; - ("Ethiopic Supplement"                              (
+    ; -                                                      "Kefa"
+    ; -                                                      "Abyssinica SIL"
+    ; -                                                      "Code2000"
+    ; -                                                      ))
+    ; - ("Ethiopic"                                         (
+    ; -                                                      "Kefa"
+    ; -                                                      "Nyala"
+    ; -                                                      "Abyssinica SIL"
+    ; -                                                      "Ethiopia Jiret"
+    ; -                                                      "Ethiopia WashRa SemiBold"
+    ; -                                                      "Ethopic Yebse"
+    ; -                                                      "Code2000"
+    ; -                                                      ))
     ("General Punctuation"                              (
-                                                         "Monaco"
-                                                         "Apple Symbols"
-                                                         "Cambria Math"
+                                                         ; - "Monaco"
+                                                         ; - "Apple Symbols"
+                                                         ; - "Cambria Math"
                                                          "DejaVu Sans:width=condensed"
-                                                         "Symbola"
+                                                         ; - "Symbola"
                                                          "Quivira"
                                                          ))
     ("Geometric Shapes"                                 (
                                                          "DejaVu Sans Mono"
                                                          "DejaVu Sans:width=condensed"
-                                                         "Arial Unicode MS"
-                                                         "Symbola"
-                                                         "Quivira"
+                                                         ; - "Arial Unicode MS"
+                                                         ; - "Symbola"
+                                                         ; - "Quivira"
                                                          ))
     ("Georgian Supplement"                              (
-                                                         "DejaVu Serif:width=condensed" ; 83/88
-                                                         "MPH 2B Damase"                ; 38/40
+                                                         ; - "DejaVu Serif:width=condensed" ; 83/88
+                                                         ; - "MPH 2B Damase"                ; 38/40
                                                          "Quivira"                      ; 40/40
                                                          ))
     ("Georgian"                                         (
-                                                         "DejaVu Sans Mono"             ; 45/88
-                                                         "DejaVu Sans:width=condensed"  ; 83/88
-                                                         "Arial Unicode MS"             ; 78/88
-                                                         "Code2000"                     ; 83/88
+                                                         ; - "DejaVu Sans Mono"             ; 45/88
+                                                         ; - "DejaVu Sans:width=condensed"  ; 83/88
+                                                         ; - "Arial Unicode MS"             ; 78/88
+                                                         ; - "Code2000"                     ; 83/88
                                                          "Quivira"                      ; 88/88
-                                                         "Sylfaen"                      ; 40/88
-                                                         "MPH 2B Damase"                ; 39/88
+                                                         ; - "Sylfaen"                      ; 40/88
+                                                         ; - "MPH 2B Damase"                ; 39/88
                                                          ))
     ("Glagolitic"                                       (
-                                                         "MPH 2B Damase"
+                                                         ; - "MPH 2B Damase"
                                                          "Quivira"
                                                          ))
     ("Gothic"                                           (
-                                                         "Analecta"
+                                                         ; - "Analecta"
                                                          "Quivira"
-                                                         "Code2001"                     ; 27/27
+                                                         ; - "Code2001"                     ; 27/27
                                                          ))
     ("Greek Extended"                                   (
-                                                         "Consolas"                     ; 232/233
+                                                         ; - "Consolas"                     ; 232/233
                                                          "DejaVu Sans Mono"
-                                                         "Courier New"
+                                                         ; - "Courier New"
                                                          "DejaVu Sans:width=condensed"
-                                                         "Microsoft Sans Serif"
-                                                         "Gentium Plus Compact"
-                                                         "Gentium Plus"
-                                                         "Arial Unicode MS"
-                                                         "Arial"
-                                                         "Tahoma"
-                                                         "Doulos SIL"
-                                                         "Quivira"
+                                                         ; - "Microsoft Sans Serif"
+                                                         ; - "Gentium Plus Compact"
+                                                         ; - "Gentium Plus"
+                                                         ; - "Arial Unicode MS"
+                                                         ; - "Arial"
+                                                         ; - "Tahoma"
+                                                         ; - "Doulos SIL"
+                                                         ; - "Quivira"
                                                          ))
     ("Greek and Coptic"                                 (
-                                                         "Consolas"                     ; 127/134
-                                                         "DejaVu Sans Mono"             ; 110/134
+                                                         ; - "Consolas"                     ; 127/134
+                                                         ; - "DejaVu Sans Mono"             ; 110/134
                                                          "DejaVu Sans:width=condensed"  ; 134/134
-                                                         "Calibri"                      ; 127/134
-                                                         "Microsoft Sans Serif"         ; 112/134
-                                                         "Gentium Plus Compact"
-                                                         "Gentium Plus"
-                                                         "Lucida Console"               ; 73/134
-                                                         "Arial Unicode MS"             ; 105/134
-                                                         "Symbola"                      ; 134/134
-                                                         "Quivira"                      ; 134/134
+                                                         ; - "Calibri"                      ; 127/134
+                                                         ; - "Microsoft Sans Serif"         ; 112/134
+                                                         ; - "Gentium Plus Compact"
+                                                         ; - "Gentium Plus"
+                                                         ; - "Lucida Console"               ; 73/134
+                                                         ; - "Arial Unicode MS"             ; 105/134
+                                                         ; - "Symbola"                      ; 134/134
+                                                         ; - "Quivira"                      ; 134/134
                                                          ))
-    ("Gujarati"                                         (
-                                                         "Gujarati Sangam MN"
-                                                         "Gujarati MT"
-                                                         "Shruti"
-                                                         "Samyak Gujarati"
-                                                         "Samyak"
-                                                         "Arial Unicode MS"
-                                                         ))
-    ("Gurmukhi"                                         (
-                                                         "Gurmukhi Sangam MN"
-                                                         "Gurmukhi MN"
-                                                         "Raavi"
-                                                         "Arial Unicode MS"
-                                                         "AnmolUni"
-                                                         ))
-    ("Halfwidth and Fullwidth Forms"                    (
-                                                         "Meiryo"                       ; 166/225
-                                                         "Arial Unicode MS"             ; 223/225
-                                                         "Microsoft JhengHei"           ; 225/225
-                                                         "BabelStone Han"               ; 173/225
-                                                         "Apple Symbols"                ;  55/225
-                                                         "Code2000"                     ; 186/225
-                                                         ))
-    ("Hangul Compatibility Jamo"                        (
-                                                         "PC Myungjo"                   ; 94/94
-                                                         "Malgun Gothic"
-                                                         "Gulim"
-                                                         "Dotum"
-                                                         "Batang"
-                                                         "Gungsuh"
-                                                         "Apple Myungjo"                ; 94/94
-                                                         "UnBatang"                     ; 94/94
-                                                         "WenQuanYi Zen Hei Mono"       ; 94/94
-                                                         "Arial Unicode MS"
-                                                         "Code2000"
-                                                         "HeadLineA"                    ; 94/94
-                                                         ))
-    ("Hangul Jamo Extended-A"                           (
-                                                         "UnBatang"
-                                                         ))
-    ;; ("Hangul Jamo Extended-B"                        (""))                           ; todo
-    ("Hangul Jamo"                                      (
-                                                         "UnBatang"                     ; 186/186
-                                                         "WenQuanYi Zen Hei Mono"       ; 146/186
-                                                         "PC Myungjo"                   ; 67/186
-                                                         "Malgun Gothic"
-                                                         "Gulim"
-                                                         "Dotum"
-                                                         "Batang"
-                                                         "Gungsuh"
-                                                         "Arial Unicode MS"
-                                                         "Code2000"
-                                                         ))
-    ("Hangul Syllables"                                 (
-                                                         "Apple Gothic"                 ; 11172/11172
-                                                         "Malgun Gothic"
-                                                         "Gulim"
-                                                         "Dotum"
-                                                         "Batang"
-                                                         "Gungsuh"
-                                                         "UnBatang"                     ; 11172/11172
-                                                         "WenQuanYi Zen Hei Mono"       ; 11172/11172
-                                                         "Arial Unicode MS"
-                                                         "Code2000"
-                                                         ))
-    ("Hanunoo"                                          (
-                                                         "MPH 2B Damase"
-                                                         "Quivira"
-                                                         ))
+    ; - ("Gujarati"                                         (
+    ; -                                                      "Gujarati Sangam MN"
+    ; -                                                      "Gujarati MT"
+    ; -                                                      "Shruti"
+    ; -                                                      "Samyak Gujarati"
+    ; -                                                      "Samyak"
+    ; -                                                      "Arial Unicode MS"
+    ; -                                                      ))
+    ; - ("Gurmukhi"                                         (
+    ; -                                                      "Gurmukhi Sangam MN"
+    ; -                                                      "Gurmukhi MN"
+    ; -                                                      "Raavi"
+    ; -                                                      "Arial Unicode MS"
+    ; -                                                      "AnmolUni"
+    ; -                                                      ))
+    ; - ("Halfwidth and Fullwidth Forms"                    (
+    ; -                                                      ; - "Meiryo"                       ; 166/225
+    ; -                                                      ; - "Arial Unicode MS"             ; 223/225
+    ; -                                                      ; - "Microsoft JhengHei"           ; 225/225
+    ; -                                                      ; - "BabelStone Han"               ; 173/225
+    ; -                                                      ; - "Apple Symbols"                ;  55/225
+    ; -                                                      "Code2000"                     ; 186/225
+    ; -                                                      ))
+    ; - ("Hangul Compatibility Jamo"                        (
+    ; -                                                      "PC Myungjo"                   ; 94/94
+    ; -                                                      "Malgun Gothic"
+    ; -                                                      "Gulim"
+    ; -                                                      "Dotum"
+    ; -                                                      "Batang"
+    ; -                                                      "Gungsuh"
+    ; -                                                      "Apple Myungjo"                ; 94/94
+    ; -                                                      "UnBatang"                     ; 94/94
+    ; -                                                      "WenQuanYi Zen Hei Mono"       ; 94/94
+    ; -                                                      "Arial Unicode MS"
+    ; -                                                      "Code2000"
+    ; -                                                      "HeadLineA"                    ; 94/94
+    ; -                                                      ))
+    ; - ("Hangul Jamo Extended-A"                           (
+    ; -                                                      "UnBatang"
+    ; -                                                      ))
+    ; - ;; ("Hangul Jamo Extended-B"                        (""))                           ; todo
+    ; - ("Hangul Jamo"                                      (
+    ; -                                                      "UnBatang"                     ; 186/186
+    ; -                                                      "WenQuanYi Zen Hei Mono"       ; 146/186
+    ; -                                                      "PC Myungjo"                   ; 67/186
+    ; -                                                      "Malgun Gothic"
+    ; -                                                      "Gulim"
+    ; -                                                      "Dotum"
+    ; -                                                      "Batang"
+    ; -                                                      "Gungsuh"
+    ; -                                                      "Arial Unicode MS"
+    ; -                                                      "Code2000"
+    ; -                                                      ))
+    ; - ("Hangul Syllables"                                 (
+    ; -                                                      "Apple Gothic"                 ; 11172/11172
+    ; -                                                      "Malgun Gothic"
+    ; -                                                      "Gulim"
+    ; -                                                      "Dotum"
+    ; -                                                      "Batang"
+    ; -                                                      "Gungsuh"
+    ; -                                                      "UnBatang"                     ; 11172/11172
+    ; -                                                      "WenQuanYi Zen Hei Mono"       ; 11172/11172
+    ; -                                                      "Arial Unicode MS"
+    ; -                                                      "Code2000"
+    ; -                                                      ))
+    ; - ("Hanunoo"                                          (
+    ; -                                                      "MPH 2B Damase"
+    ; -                                                      "Quivira"
+    ; -                                                      ))
     ("Hebrew"                                           (
-                                                         "Miriam Fixed"
-                                                         "Arial Hebrew"
-                                                         "Raanana"
-                                                         "New Peninim MT"
-                                                         "Aharoni"
-                                                         "David"
-                                                         "FrankRuehl"
-                                                         "Gisha"
-                                                         "Levenim MT"
-                                                         "Narkisim"
-                                                         "Rod"
-                                                         "Courier New"
-                                                         "Adobe Hebrew"                 ; 54/87
-                                                         "Microsoft Sans Serif"
-                                                         "Tahoma"
-                                                         "Lucida Sans Unicode"
-                                                         "Arial Unicode MS"
-                                                         "Arial"
+                                                         ; - "Miriam Fixed"
+                                                         ; - "Arial Hebrew"
+                                                         ; - "Raanana"
+                                                         ; - "New Peninim MT"
+                                                         ; - "Aharoni"
+                                                         ; - "David"
+                                                         ; - "FrankRuehl"
+                                                         ; - "Gisha"
+                                                         ; - "Levenim MT"
+                                                         ; - "Narkisim"
+                                                         ; - "Rod"
+                                                         ; - "Courier New"
+                                                         ; - "Adobe Hebrew"                 ; 54/87
+                                                         ; - "Microsoft Sans Serif"
+                                                         ; - "Tahoma"
+                                                         ; - "Lucida Sans Unicode"
+                                                         ; - "Arial Unicode MS"
+                                                         ; - "Arial"
                                                          "Quivira"
                                                          ))
     ;; ("High Private Use Surrogates"                   (""))                           ; no displayable characters
     ;; ("High Surrogates"                               (""))                           ; no displayable characters
     ("Hiragana"                                         (
                                                          "Osaka:spacing=m"
-                                                         "MS Gothic"
-                                                         "MS Mincho"
-                                                         "MingLiU"
-                                                         "Hiragino Kaku Gothic Pro"
+                                                         ; - "MS Gothic"
+                                                         ; - "MS Mincho"
+                                                         ; - "MingLiU"
+                                                         ; - "Hiragino Kaku Gothic Pro"
                                                          ;; "Aqua Kana"
-                                                         "Meiryo"
-                                                         "Arial Unicode MS"
-                                                         "HanaMinA"                     ; 93/93
-                                                         "BabelStone Han"               ; 93/93
+                                                         ; - "Meiryo"
+                                                         ; - "Arial Unicode MS"
+                                                         ; - "HanaMinA"                     ; 93/93
+                                                         ; - "BabelStone Han"               ; 93/93
                                                          ))
     ("IPA Extensions"                                   (
-                                                         "Monaco"
-                                                         "Consolas"                     ; 96/96
+                                                         ; - "Monaco"
+                                                         ; - "Consolas"                     ; 96/96
                                                          "DejaVu Sans Mono"             ; 96/96
-                                                         "Courier New"
-                                                         "Arial Unicode MS"
-                                                         "Arial"
-                                                         "Tahoma"
-                                                         "Microsoft Sans Serif"
-                                                         "Symbola"                      ; 96/96
-                                                         "Quivira"                      ; 96/96
+                                                         ; - "Courier New"
+                                                         ; - "Arial Unicode MS"
+                                                         ; - "Arial"
+                                                         ; - "Tahoma"
+                                                         ; - "Microsoft Sans Serif"
+                                                         ; - "Symbola"                      ; 96/96
+                                                         ; - "Quivira"                      ; 96/96
                                                          ))
     ("Ideographic Description Characters"               (
-                                                         "SimHei"
-                                                         "FangSong"
-                                                         "SimSun"
-                                                         "Microsoft YaHei"
-                                                         "BabelStone Han"               ; 12/12
-                                                         "MingLiU"
-                                                         "Microsoft JhengHei"
-                                                         "Apple Myungjo"
-                                                         "HanaMinA"                     ; 12/12
+                                                         ; - "SimHei"
+                                                         ; - "FangSong"
+                                                         ; - "SimSun"
+                                                         ; - "Microsoft YaHei"
+                                                         ; - "BabelStone Han"               ; 12/12
+                                                         ; - "MingLiU"
+                                                         ; - "Microsoft JhengHei"
+                                                         ; - "Apple Myungjo"
+                                                         ; - "HanaMinA"                     ; 12/12
                                                          "Quivira"
-                                                         "DFKai-SB"
+                                                         ; - "DFKai-SB"
                                                          ))
     ("Imperial Aramaic"                                 (
                                                          "Quivira"
                                                          ))
-    ("Inscriptional Pahlavi"                            (
-                                                         "WenQuanYi Zen Hei"
-                                                         ))
-    ("Inscriptional Parthian"                           (
-                                                         "WenQuanYi Zen Hei"
-                                                         ))
-    ("Javanese"                                         (
-                                                         "Tuladha Jejeg"
-                                                         ))
-    ;; ("Kaithi"                                        (""))                           ; todo
-    ("Kana Supplement"                                  (
-                                                         "HanaMinA"                     ; 2/2
-                                                         "BabelStone Han"               ; 2/2
-                                                         ))
+    ; - ("Inscriptional Pahlavi"                            (
+    ; -                                                      "WenQuanYi Zen Hei"
+    ; -                                                      ))
+    ; - ("Inscriptional Parthian"                           (
+    ; -                                                      "WenQuanYi Zen Hei"
+    ; -                                                      ))
+    ; - ("Javanese"                                         (
+    ; -                                                      "Tuladha Jejeg"
+    ; -                                                      ))
+    ; - ;; ("Kaithi"                                        (""))                           ; todo
+    ; - ("Kana Supplement"                                  (
+    ; -                                                      "HanaMinA"                     ; 2/2
+    ; -                                                      ; - "BabelStone Han"               ; 2/2
+    ; -                                                      ))
     ("Kanbun"                                           (
                                                          "SimHei"
-                                                         "FangSong"
-                                                         "SimSun"
-                                                         "Meiryo"
+                                                         ; - "FangSong"
+                                                         ; - "SimSun"
+                                                         ; - "Meiryo"
                                                          ;; "Aqua Kana"
-                                                         "Arial Unicode MS"
-                                                         "WenQuanYi Zen Hei Mono"       ; 14/16
-                                                         "HanaMinA"                     ; 16/16
-                                                         "BabelStone Han"               ; 16/16
-                                                         "MingLiU"
+                                                         ; - "Arial Unicode MS"
+                                                         ; - "WenQuanYi Zen Hei Mono"       ; 14/16
+                                                         ; - "HanaMinA"                     ; 16/16
+                                                         ; - "BabelStone Han"               ; 16/16
+                                                         ; - "MingLiU"
                                                          ))
     ("Kangxi Radicals"                                  (
-                                                         "WenQuanYi Zen Hei Mono"       ; 214/214
+                                                         ; - "WenQuanYi Zen Hei Mono"       ; 214/214
                                                          "SimHei"
-                                                         "FangSong"
-                                                         "SimSun"
-                                                         "Microsoft YaHei"
-                                                         "BabelStone Han"               ; 214/214
-                                                         "HanaMinA"                     ; 214/214
-                                                         "MingLiU"
-                                                         "Microsoft JhengHei"
-                                                         "DFKai-SB"
-                                                         "Apple Myungjo"
-                                                         "Apple Symbols"
+                                                         ; - "FangSong"
+                                                         ; - "SimSun"
+                                                         ; - "Microsoft YaHei"
+                                                         ; - "BabelStone Han"               ; 214/214
+                                                         ; - "HanaMinA"                     ; 214/214
+                                                         ; - "MingLiU"
+                                                         ; - "Microsoft JhengHei"
+                                                         ; - "DFKai-SB"
+                                                         ; - "Apple Myungjo"
+                                                         ; - "Apple Symbols"
 
                                                          ;; "Aqua Kana"
                                                          ))
-    ("Kannada"                                          (
-                                                         "Kannada Sangam MN"
-                                                         "Tunga"
-                                                         "Akshar Unicode"
-                                                         "Arial Unicode MS"
-                                                         "Kedage"
-                                                         "Code2000"
-                                                         ))
-    ("Katakana Phonetic Extensions"                     (
-                                                         "MS Gothic"
-                                                         "MingLiU"
-                                                         ;; "Aqua Kana"
-                                                         "Meiryo"
-                                                         "HanaMinA"                     ; 16/16
-                                                         "BabelStone Han"               ; 16/16
-                                                         ))
+    ; ("Kannada"                                          (
+    ;                                                      "Kannada Sangam MN"
+    ;                                                      "Tunga"
+    ;                                                      "Akshar Unicode"
+    ;                                                      "Arial Unicode MS"
+    ;                                                      "Kedage"
+    ;                                                      "Code2000"
+    ;                                                      ))
+    ; - ("Katakana Phonetic Extensions"                     (
+    ; -                                                      ; - "MS Gothic"
+    ; -                                                      ; - "MingLiU"
+    ; -                                                      ;; "Aqua Kana"
+    ; -                                                      ; - "Meiryo"
+    ; -                                                      "HanaMinA"                     ; 16/16
+    ; -                                                      ; - "BabelStone Han"               ; 16/16
+    ; -                                                      ))
     ("Katakana"                                         (
                                                          "Osaka:spacing=m"
-                                                         ;; "Aqua Kana"
-                                                         "MS Gothic"
-                                                         "MingLiU"
-                                                         "Meiryo"
-                                                         "HanaMinA"                     ; 96/96
-                                                         "Arial Unicode MS"
-                                                         "BabelStone Han"               ; 96/96
+                                                         ; - ;; "Aqua Kana"
+                                                         ; - "MS Gothic"
+                                                         ; - "MingLiU"
+                                                         ; - "Meiryo"
+                                                         ; - "HanaMinA"                     ; 96/96
+                                                         ; - "Arial Unicode MS"
+                                                         ; - "BabelStone Han"               ; 96/96
                                                          ))
     ("Kayah Li"                                         (                               ; todo quality free alternative
                                                          "Code2000"
                                                          ))
-    ("Kharoshthi"                                       (
-                                                         "MPH 2B Damase"
-                                                         ))
-    ("Khmer Symbols"                                    (
-                                                         "Khmer Sangam MN"
-                                                         "Khmer Mondulkiri"
-                                                         "Khmer Busra"
-                                                         "Code2000"
-                                                         ))
-    ("Khmer"                                            (
-                                                         "Khmer Sangam MN"
-                                                         "DaunPenh"
-                                                         "Code2000"
-                                                         "MoolBoran"
-                                                         "Khmer Mondulkiri"
-                                                         "Khmer Busra"
-                                                         ))
-    ("Lao"                                              (
-                                                         "DejaVu Sans Mono"             ; 45/65
-                                                         "Lao Sangam MN"
-                                                         "DokChampa"
-                                                         "Arial Unicode MS"             ; 65/65
-                                                         "Saysettha MX"                 ; 65/65
-                                                         "DejaVu Sans:width=condensed"  ; 65/65
-                                                         ))
+    ; - ("Kharoshthi"                                       (
+    ; -                                                      "MPH 2B Damase"
+    ; -                                                      ))
+    ; - ("Khmer Symbols"                                    (
+    ; -                                                      "Khmer Sangam MN"
+    ; -                                                      "Khmer Mondulkiri"
+    ; -                                                      "Khmer Busra"
+    ; -                                                      "Code2000"
+    ; -                                                      ))
+    ; - ("Khmer"                                            (
+    ; -                                                      "Khmer Sangam MN"
+    ; -                                                      "DaunPenh"
+    ; -                                                      "Code2000"
+    ; -                                                      "MoolBoran"
+    ; -                                                      "Khmer Mondulkiri"
+    ; -                                                      "Khmer Busra"
+    ; -                                                      ))
+    ; - ("Lao"                                              (
+    ; -                                                      "DejaVu Sans Mono"             ; 45/65
+    ; -                                                      "Lao Sangam MN"
+    ; -                                                      "DokChampa"
+    ; -                                                      "Arial Unicode MS"             ; 65/65
+    ; -                                                      "Saysettha MX"                 ; 65/65
+    ; -                                                      "DejaVu Sans:width=condensed"  ; 65/65
+    ; -                                                      ))
     ;; ("Latin Extended Additional"                     (                               ; hopefully well-covered by the default font
     ;;                                                   "Monaco"
     ;;                                                   "DejaVu Sans Mono"
@@ -2163,13 +2173,13 @@ Set to nil to disable."
     ;;                                                   "Quivira"
     ;;                                                  ))
     ("Latin Extended-C"                                 (
-                                                         "DejaVu Sans:width=condensed"
-                                                         "Cambria Math"
+                                                         ; - "DejaVu Sans:width=condensed"
+                                                         ; - "Cambria Math"
                                                          "Quivira"
                                                          ))
     ("Latin Extended-D"                                 (
                                                          "Quivira"
-                                                         "Code2000"
+                                                         ; - "Code2000"
                                                          ))
     ;; ("Latin-1 Supplement"                            (                               ; hopefully well-covered by the default font
     ;;                                                   "Monaco"
@@ -2181,240 +2191,240 @@ Set to nil to disable."
     ;;                                                  ))
     ;; ("Lepcha"                                        (""))                           ; todo
     ("Letterlike Symbols"                               (
-                                                         "Apple Symbols"                ; 77/80
-                                                         "Cambria Math"                 ; 67/80
-                                                         "DejaVu Sans:width=condensed"  ; 75/80
-                                                         "Arial Unicode MS"             ; 57/80
-                                                         "Code2000"                     ; 80/80
-                                                         "Symbola"                      ; 80/80
+                                                         ; - "Apple Symbols"                ; 77/80
+                                                         ; - "Cambria Math"                 ; 67/80
+                                                         ; - "DejaVu Sans:width=condensed"  ; 75/80
+                                                         ; - "Arial Unicode MS"             ; 57/80
+                                                         ; - "Code2000"                     ; 80/80
+                                                         ; - "Symbola"                      ; 80/80
                                                          "Quivira"                      ; 80/80
                                                          ))
-    ("Limbu"                                            (
-                                                         "MPH 2B Damase"
-                                                         ))
-    ("Linear B Ideograms"                               (
-                                                         "Aegean"
-                                                         "Code2001"                     ; 123/123
-                                                         ))
-    ("Linear B Syllabary"                               (
-                                                         "Aegean"
-                                                         "Code2001"                     ; 88/88
-                                                         ))
+    ; - ("Limbu"                                            (
+    ; -                                                      "MPH 2B Damase"
+    ; -                                                      ))
+    ; - ("Linear B Ideograms"                               (
+    ; -                                                      "Aegean"
+    ; -                                                      "Code2001"                     ; 123/123
+    ; -                                                      ))
+    ; - ("Linear B Syllabary"                               (
+    ; -                                                      "Aegean"
+    ; -                                                      "Code2001"                     ; 88/88
+    ; -                                                      ))
     ("Lisu"                                             (
                                                          "Quivira"
                                                          ))
     ;; ("Low Surrogates"                                (""))                           ; no displayable characters
     ("Lycian"                                           (
-                                                         "Aegean"
+                                                         ; - "Aegean"
                                                          "Quivira"
                                                          ))
     ("Lydian"                                           (
-                                                         "Aegean"
+                                                         ; - "Aegean"
                                                          "Quivira"
                                                          ))
     ("Mahjong Tiles"                                    (
-                                                         "Symbola"
+                                                         ; - "Symbola"
                                                          "Quivira"
                                                          ))
-    ("Malayalam"                                        (
-                                                         "Malayalam Sangam MN"
-                                                         "Kartika"
-                                                         "Samyak Malayalam"
-                                                         "Samyak"
-                                                         "Akshar Unicode"
-                                                         "Arial Unicode MS"
-                                                         ))
-    ;; ("Mandaic"                                       (""))                           ; todo
+    ; - ("Malayalam"                                        (
+    ; -                                                      "Malayalam Sangam MN"
+    ; -                                                      "Kartika"
+    ; -                                                      "Samyak Malayalam"
+    ; -                                                      "Samyak"
+    ; -                                                      "Akshar Unicode"
+    ; -                                                      "Arial Unicode MS"
+    ; -                                                      ))
+    ; - ;; ("Mandaic"                                       (""))                           ; todo
     ("Mathematical Alphanumeric Symbols"                (
-                                                         "Cambria Math"                 ; 994/996
-                                                         "Code2001"                     ; 994/996
-                                                         "Symbola"                      ; 996/996
+                                                         ; - "Cambria Math"                 ; 994/996
+                                                         ; - "Code2001"                     ; 994/996
+                                                         ; - "Symbola"                      ; 996/996
                                                          "Quivira"                      ; 996/996
                                                          ))
     ("Mathematical Operators"                           (
-                                                         "DejaVu Sans Mono"             ; 159/256
-                                                         "Apple Symbols"                ; 256/256
-                                                         "Cambria Math"                 ; 256/256
-                                                         "DejaVu Sans:width=condensed"  ; 256/256
-                                                         "Arial Unicode MS"             ; 242/256
-                                                         "Code2000"                     ; 256/256
-                                                         "Symbola"                      ; 256/256
+                                                         ; - "DejaVu Sans Mono"             ; 159/256
+                                                         ; - "Apple Symbols"                ; 256/256
+                                                         ; - "Cambria Math"                 ; 256/256
+                                                         ; - "DejaVu Sans:width=condensed"  ; 256/256
+                                                         ; - "Arial Unicode MS"             ; 242/256
+                                                         ; - "Code2000"                     ; 256/256
+                                                         ; - "Symbola"                      ; 256/256
                                                          "Quivira"                      ; 256/256
                                                          ))
     ;; ("Meetei Mayek Extensions"                       ("")                            ; todo
-    ("Meetei Mayek"                                     (
-                                                         "Eeyek Unicode"                ; fails x11
-                                                         "Meetei Mayek"
-                                                         ))
-    ("Meroitic Cursive"                                 (
-                                                         "Aegyptus"
-                                                         ))
-    ("Meroitic Hieroglyphs"                             (
-                                                         "Aegyptus"
-                                                         ))
+    ; - ("Meetei Mayek"                                     (
+    ; -                                                      "Eeyek Unicode"                ; fails x11
+    ; -                                                      "Meetei Mayek"
+    ; -                                                      ))
+    ; - ("Meroitic Cursive"                                 (
+    ; -                                                      "Aegyptus"
+    ; -                                                      ))
+    ; - ("Meroitic Hieroglyphs"                             (
+    ; -                                                      "Aegyptus"
+    ; -                                                      ))
     ;; ("Miao"                                          (""))                           ; todo
     ("Miscellaneous Mathematical Symbols-A"             (
-                                                         "Apple Symbols"
-                                                         "Symbola"                      ; 48/48
+                                                         ; - "Apple Symbols"
+                                                         ; - "Symbola"                      ; 48/48
                                                          "Quivira"                      ; 48/48
-                                                         "Cambria Math"                 ; 28/48
+                                                         ; - "Cambria Math"                 ; 28/48
                                                          ))
     ("Miscellaneous Mathematical Symbols-B"             (
-                                                         "Apple Symbols"
-                                                         "Cambria Math"                 ; 128/128
-                                                         "Code2000"                     ; 128/128
-                                                         "Symbola"                      ; 128/128
+                                                         ; - "Apple Symbols"
+                                                         ; - "Cambria Math"                 ; 128/128
+                                                         ; - "Code2000"                     ; 128/128
+                                                         ; - "Symbola"                      ; 128/128
                                                          "Quivira"                      ; 128/128
                                                          ))
     ("Miscellaneous Symbols and Pictographs"            (
                                                          ;; "Apple Color Emoji"         ; 533/533
                                                          "Symbola"                      ; 533/533
-                                                         "Quivira"                      ; 157/533
+                                                         ; - "Quivira"                      ; 157/533
                                                          ))
     ("Miscellaneous Symbols and Arrows"                 (
-                                                         "Symbola"
+                                                         ; - "Symbola"
                                                          "Quivira"
                                                          ))
     ("Miscellaneous Symbols"                            (
-                                                         "Apple Symbols"
-                                                         "Arial Unicode MS"
-                                                         "Symbola"
+                                                         ; - "Apple Symbols"
+                                                         ; - "Arial Unicode MS"
+                                                         ; - "Symbola"
                                                          "Quivira"
                                                          ))
     ("Miscellaneous Technical"                          (
-                                                         "Apple Symbols"
-                                                         "Cambria Math"                 ; 208/244
-                                                         "Symbola"                      ; 244/244
+                                                         ; - "Apple Symbols"
+                                                         ; - "Cambria Math"                 ; 208/244
+                                                         ; - "Symbola"                      ; 244/244
                                                          "Quivira"                      ; 244/244
                                                          ))
     ("Modifier Tone Letters"                            (
-                                                         "Apple Myungjo"
-                                                         "Apple Symbols"
-                                                         "Doulos SIL"                   ; 32/32
-                                                         "Code2000"                     ; 32/32
+                                                         ; - "Apple Myungjo"
+                                                         ; - "Apple Symbols"
+                                                         ; - "Doulos SIL"                   ; 32/32
+                                                         ; - "Code2000"                     ; 32/32
                                                          "Quivira"                      ; 32/32
                                                          ))
-    ("Mongolian"                                        (
-                                                         "ST Fangsong"
-                                                         "ST Heiti"
-                                                         "ST Kaiti"
-                                                         "ST Song"
-                                                         "Mongolian Baiti"
-                                                         "Daicing Xiaokai"
-                                                         "Code2000"
-                                                         ))
+    ; - ("Mongolian"                                        (
+    ; -                                                      "ST Fangsong"
+    ; -                                                      "ST Heiti"
+    ; -                                                      "ST Kaiti"
+    ; -                                                      "ST Song"
+    ; -                                                      "Mongolian Baiti"
+    ; -                                                      "Daicing Xiaokai"
+    ; -                                                      "Code2000"
+    ; -                                                      ))
     ("Musical Symbols"                                  (
-                                                         "Musica"
-                                                         "Symbola"
+                                                         ; - "Musica"
+                                                         ; - "Symbola"
                                                          "Quivira"
                                                          ))
-    ("Myanmar Extended-A"                               (
-                                                         "Myanmar Sangam MN"
-                                                         "Padauk"
-                                                         ))
-    ("Myanmar"                                          (
-                                                         "Myanmar Sangam MN"
-                                                         "Myanmar MN"
-                                                         "Padauk"
-                                                         "Code2000"
-                                                         ))
+    ; - ("Myanmar Extended-A"                               (
+    ; -                                                      "Myanmar Sangam MN"
+    ; -                                                      "Padauk"
+    ; -                                                      ))
+    ; - ("Myanmar"                                          (
+    ; -                                                      "Myanmar Sangam MN"
+    ; -                                                      "Myanmar MN"
+    ; -                                                      "Padauk"
+    ; -                                                      "Code2000"
+    ; -                                                      ))
     ("NKo"                                              (
-                                                         "Conakry"                      ; 59/59
-                                                         "DejaVu Sans:width=condensed"  ; 54/59
+                                                         ; - "Conakry"                      ; 59/59
+                                                         ; - "DejaVu Sans:width=condensed"  ; 54/59
                                                          "Code2000"                     ; 59/59
                                                          ))
-    ("New Tai Lue"                                      (
-                                                         "Dai Banna SIL Book"
-                                                         "Dai Banna SIL Book:style=Regular"
-                                                         ))
+    ; - ("New Tai Lue"                                      (
+    ; -                                                      "Dai Banna SIL Book"
+    ; -                                                      "Dai Banna SIL Book:style=Regular"
+    ; -                                                      ))
     ("Number Forms"                                     (
-                                                         "DejaVu Sans:width=condensed"  ; 55/58
-                                                         "Arial Unicode MS"             ; 48/58
-                                                         "Symbola"                      ; 58/58
+                                                         ; - "DejaVu Sans:width=condensed"  ; 55/58
+                                                         ; - "Arial Unicode MS"             ; 48/58
+                                                         ; - "Symbola"                      ; 58/58
                                                          "Quivira"                      ; 58/58
-                                                         "Code2000"                     ; 54/58
+                                                         ; - "Code2000"                     ; 54/58
                                                          ))
     ("Ogham"                                            (
-                                                         "DejaVu Sans:width=condensed"
+                                                         ; - "DejaVu Sans:width=condensed"
                                                          "Quivira"
                                                          ))
     ("Ol Chiki"                                         (                               ; todo quality free alternative
                                                          "Code2000"
                                                          ))
-    ("Old Italic"                                       (
-                                                         "Aegean"
-                                                         "Quivira"
-                                                         "Code2001"                     ; 35/35
-                                                         ))
-    ("Old Persian"                                      (
-                                                         "Aegean"
-                                                         "Code2001"                     ; 50/50
-                                                         ))
-    ("Old South Arabian"                                (
-                                                         "Qataban"
-                                                         "Quivira"
-                                                         ))
-    ("Old Turkic"                                       (
-                                                         "Quivira"
-                                                         ))
+    ; - ("Old Italic"                                       (
+    ; -                                                      "Aegean"
+    ; -                                                      "Quivira"
+    ; -                                                      "Code2001"                     ; 35/35
+    ; -                                                      ))
+    ; - ("Old Persian"                                      (
+    ; -                                                      "Aegean"
+    ; -                                                      "Code2001"                     ; 50/50
+    ; -                                                      ))
+    ; - ("Old South Arabian"                                (
+    ; -                                                      "Qataban"
+    ; -                                                      "Quivira"
+    ; -                                                      ))
+    ; - ("Old Turkic"                                       (
+    ; -                                                      "Quivira"
+    ; -                                                      ))
     ("Optical Character Recognition"                    (
-                                                         "Apple Symbols"
-                                                         "Arial Unicode MS"
-                                                         "Symbola"
+                                                         ; - "Apple Symbols"
+                                                         ; - "Arial Unicode MS"
+                                                         ; - "Symbola"
                                                          "Quivira"
                                                          ))
-    ("Oriya"                                            (
-                                                         "Oriya Sangam MN"
-                                                         "Kalinga"
-                                                         "Samyak Oriya"
-                                                         "Samyak"
-                                                         "Arial Unicode MS"
-                                                         ))
-    ("Osmanya"                                          (
-                                                         "MPH 2B Damase"
-                                                         "Code2001"                     ; 40/40
-                                                         ))
-    ("Phags-pa"                                         (
-                                                         "Microsoft PhagsPa"
-                                                         "BabelStone Phags-pa Book"     ; 56/56
-                                                         "BabelStone Phags-pa Book:style=Regular"
-                                                         "Code2000"                     ; 56/56
-                                                         ))
-    ("Phaistos Disc"                                    (
-                                                         "Aegean"
-                                                         "Code2001"                     ; 46/46
-                                                         ))
+    ; - ("Oriya"                                            (
+    ; -                                                      "Oriya Sangam MN"
+    ; -                                                      "Kalinga"
+    ; -                                                      "Samyak Oriya"
+    ; -                                                      "Samyak"
+    ; -                                                      "Arial Unicode MS"
+    ; -                                                      ))
+    ; - ("Osmanya"                                          (
+    ; -                                                      "MPH 2B Damase"
+    ; -                                                      "Code2001"                     ; 40/40
+    ; -                                                      ))
+    ; - ("Phags-pa"                                         (
+    ; -                                                      "Microsoft PhagsPa"
+    ; -                                                      "BabelStone Phags-pa Book"     ; 56/56
+    ; -                                                      "BabelStone Phags-pa Book:style=Regular"
+    ; -                                                      "Code2000"                     ; 56/56
+    ; -                                                      ))
+    ; - ("Phaistos Disc"                                    (
+    ; -                                                      ; - "Aegean"
+    ; -                                                      "Code2001"                     ; 46/46
+    ; -                                                      ))
     ("Phoenician"                                       (
-                                                         "Aegean"
+                                                         ; - "Aegean"
                                                          "Quivira"
-                                                         "Code2001"                     ; 27/29
+                                                         ; - "Code2001"                     ; 27/29
                                                          ))
     ("Phonetic Extensions Supplement"                   (
-                                                         "Consolas"                     ; 64/64
-                                                         "Calibri"                      ; 64/64
-                                                         "Courier New"                  ; 64/64 ; todo a better OSX choice
+                                                         ; - "Consolas"                     ; 64/64
+                                                         ; - "Calibri"                      ; 64/64
+                                                         ; - "Courier New"                  ; 64/64 ; todo a better OSX choice
                                                          "Quivira"                      ; 64/64
-                                                         "DejaVu Sans Mono"             ; 37/64
-                                                         "DejaVu Sans:width=condensed"  ; 38/64
-                                                         "Code2000"                     ; 64/64
+                                                         ; - "DejaVu Sans Mono"             ; 37/64
+                                                         ; - "DejaVu Sans:width=condensed"  ; 38/64
+                                                         ; - "Code2000"                     ; 64/64
                                                          ))
     ("Phonetic Extensions"                              (
-                                                         "Monaco"
-                                                         "Consolas"                     ; 128/128
-                                                         "Calibri"                      ; 128/128
+                                                         ; - "Monaco"
+                                                         ; - "Consolas"                     ; 128/128
+                                                         ; - "Calibri"                      ; 128/128
                                                          "Quivira"                      ; 128/128
-                                                         "Courier New"                  ; 128/128
-                                                         "DejaVu Sans:width=condensed"
+                                                         ; - "Courier New"                  ; 128/128
+                                                         ; - "DejaVu Sans:width=condensed"
                                                          ))
     ("Playing Cards"                                    (
                                                          "DejaVu Sans:width=condensed"
-                                                         "Symbola"
-                                                         "Quivira"
+                                                         ; - "Symbola"
+                                                         ; - "Quivira"
                                                          ))
     ;; ("Private Use Area"                              (""))
-    ("Rejang"                                           (                               ; todo quality free alternative
-                                                         "Code2000"
-                                                         ))
+    ; - ("Rejang"                                           (                               ; todo quality free alternative
+    ; -                                                      "Code2000"
+    ; -                                                      ))
     ;; ("Rumi Numeral Symbols"                          (""))
     ("Runic"                                            (
                                                          "Quivira"
@@ -2422,25 +2432,25 @@ Set to nil to disable."
     ("Samaritan"                                        (
                                                          "Quivira"
                                                          ))
-    ("Saurashtra"                                       (
-                                                         "Code2000"
-                                                         "Sourashtra"
-                                                         ))
-    ;; ("Sharada"                                       (""))                           ; todo
-    ("Shavian"                                          (
-                                                         "Apple Symbols"
-                                                         "MPH 2B Damase"
-                                                         "Code2001"                     ; 48/48
-                                                         ))
-    ("Sinhala"                                          (
-                                                         "Sinhala Sangam MN"
-                                                         "Iskoola Pota"
-                                                         "Akshar Unicode"
-                                                         ))
+    ; - ("Saurashtra"                                       (
+    ; -                                                      "Code2000"
+    ; -                                                      "Sourashtra"
+    ; -                                                      ))
+    ; - ;; ("Sharada"                                       (""))                           ; todo
+    ; - ("Shavian"                                          (
+    ; -                                                      "Apple Symbols"
+    ; -                                                      "MPH 2B Damase"
+    ; -                                                      "Code2001"                     ; 48/48
+    ; -                                                      ))
+    ; - ("Sinhala"                                          (
+    ; -                                                      "Sinhala Sangam MN"
+    ; -                                                      "Iskoola Pota"
+    ; -                                                      "Akshar Unicode"
+    ; -                                                      ))
     ("Small Form Variants"                              (
-                                                         "Apple Symbols"
-                                                         "Arial Unicode MS"
-                                                         "WenQuanYi Zen Hei Mono"       ; 25/26
+                                                         ; - "Apple Symbols"
+                                                         ; - "Arial Unicode MS"
+                                                         ; - "WenQuanYi Zen Hei Mono"       ; 25/26
                                                          "Code2000"
                                                          ))
     ;; ("Sora Sompeng"                                  (""))                           ; todo
@@ -2456,130 +2466,130 @@ Set to nil to disable."
     ;;                                                   "Symbola"                      ; 80/80
     ;;                                                   ))
     ("Specials"                                         (
-                                                         "Apple Symbols"
-                                                         "Arial Unicode MS"
+                                                         ; - "Apple Symbols"
+                                                         ; - "Arial Unicode MS"
                                                          "DejaVu Sans Mono"
                                                          "DejaVu Sans:width=condensed"
-                                                         "Symbola"
-                                                         "Quivira"
-                                                         "BabelStone Han"               ; 5/5
+                                                         ; - "Symbola"
+                                                         ; - "Quivira"
+                                                         ; - "BabelStone Han"               ; 5/5
                                                          ))
     ;; ("Sundanese Supplement"                          ())                             ; todo
-    ("Sundanese"                                        (
-                                                         "Sundanese Unicode"
-                                                         "Hacen Sudan"
-                                                         ))
+    ; - ("Sundanese"                                        (
+    ; -                                                      "Sundanese Unicode"
+    ; -                                                      "Hacen Sudan"
+    ; -                                                      ))
     ("Superscripts and Subscripts"                      (
-                                                         "Cambria Math"                 ; 32/42
-                                                         "Consolas"
-                                                         "Symbola"
+                                                         ; - "Cambria Math"                 ; 32/42
+                                                         ; - "Consolas"
+                                                         ; - "Symbola"
                                                          "Quivira"
                                                          ))
     ("Supplemental Arrows-A"                            (
-                                                         "Apple Symbols"
-                                                         "Cambria Math"                 ; 16/16
+                                                         ; - "Apple Symbols"
+                                                         ; - "Cambria Math"                 ; 16/16
                                                          "DejaVu Sans:width=condensed"
-                                                         "Symbola"
+                                                         ; - "Symbola"
                                                          "Quivira"
                                                          ))
     ("Supplemental Arrows-B"                            (
-                                                         "Apple Symbols"
-                                                         "Cambria Math"                 ; 128/128
-                                                         "Symbola"
+                                                         ; - "Apple Symbols"
+                                                         ; - "Cambria Math"                 ; 128/128
+                                                         ; - "Symbola"
                                                          "Quivira"
                                                          ))
     ("Supplemental Mathematical Operators"              (
-                                                         "Apple Symbols"
-                                                         "Cambria Math"                 ; 256/256
-                                                         "Symbola"                      ; 256/256
+                                                         ; - "Apple Symbols"
+                                                         ; - "Cambria Math"                 ; 256/256
+                                                         ; - "Symbola"                      ; 256/256
                                                          "Quivira"                      ; 256/256
                                                          ))
     ("Supplemental Punctuation"                         (
-                                                         "Symbola"
+                                                         ; - "Symbola"
                                                          "Quivira"
-                                                         "Code2000"
+                                                         ; - "Code2000"
                                                          ))
     ;; ("Supplementary Private Use Area-A"              (""))
     ;; ("Supplementary Private Use Area-B"              (""))
-    ("Syloti Nagri"                                     (
-                                                         "MPH 2B Damase"
-                                                         ))
-    ("Syriac"                                           (
-                                                         "Estrangelo Edessa"
-                                                         "Estrangelo Nisibin"
-                                                         "Code2000"
-                                                        ))
-    ("Tagalog"                                          (
-                                                         "Quivira"
-                                                         ))
-    ("Tagbanwa"                                         (
-                                                         "Quivira"
-                                                         ))
-    ("Tags"                                             (
-                                                         "BabelStone Han"               ; 97/97
-                                                         ))
-    ("Tai Le"                                           (
-                                                         "Microsoft Tai Le"
-                                                         "MPH 2B Damase"
-                                                         ))
-
-    ("Tai Tham"                                         (
-                                                         "Lanna Alif"
-                                                         ))
-    ("Tai Viet"                                         (
-                                                         "Tai Heritage Pro"
-                                                         ))
+    ; - ("Syloti Nagri"                                     (
+    ; -                                                      "MPH 2B Damase"
+    ; -                                                      ))
+    ; - ("Syriac"                                           (
+    ; -                                                      "Estrangelo Edessa"
+    ; -                                                      "Estrangelo Nisibin"
+    ; -                                                      "Code2000"
+    ; -                                                     ))
+    ; - ("Tagalog"                                          (
+    ; -                                                      "Quivira"
+    ; -                                                      ))
+    ; - ("Tagbanwa"                                         (
+    ; -                                                      "Quivira"
+    ; -                                                      ))
+    ; - ("Tags"                                             (
+    ; -                                                      "BabelStone Han"               ; 97/97
+    ; -                                                      ))
+    ; - ("Tai Le"                                           (
+    ; -                                                      "Microsoft Tai Le"
+    ; -                                                      "MPH 2B Damase"
+    ; -                                                      ))
+; - 
+    ; - ("Tai Tham"                                         (
+    ; -                                                      "Lanna Alif"
+    ; -                                                      ))
+    ; - ("Tai Viet"                                         (
+    ; -                                                      "Tai Heritage Pro"
+    ; -                                                      ))
     ("Tai Xuan Jing Symbols"                            (
-                                                         "Apple Symbols"
-                                                         "WenQuanYi Zen Hei Mono"       ; 87/87
-                                                         "BabelStone Han"               ; 87/87
+                                                         ; - "Apple Symbols"
+                                                         ; - "WenQuanYi Zen Hei Mono"       ; 87/87
+                                                         ; - "BabelStone Han"               ; 87/87
                                                          "DejaVu Sans:width=condensed"
-                                                         "Symbola"
+                                                         ; - "Symbola"
                                                          "Quivira"
-                                                         "Code2001"                     ; 87/87
+                                                         ; - "Code2001"                     ; 87/87
                                                          ))
     ;; ("Takri"                                         (""))                           ; todo
-    ("Tamil"                                            (
-                                                         "Tamil Sangam MN"
-                                                         "InaiMathi"
-                                                         "Latha"
-                                                         "Maduram"
-                                                         "Akshar Unicode"
-                                                         "Samyak Tamil"
-                                                         "Samyak"
-                                                         "Arial Unicode MS"
-                                                         ))
-    ("Telugu"                                           (
-                                                         "Telugu Sangam MN"
-                                                         "Gautami"
-                                                         "Akshar Unicode"
-                                                         "Code2000"
-                                                         "Arial Unicode MS"
-                                                         ))
-    ("Thaana"                                           (
-                                                         "MV Boli"
-                                                         "MPH 2B Damase"
-                                                         ))
-    ("Thai"                                             (
-                                                         "Ayuthaya"
-                                                         "Silom"
-                                                         "Krungthep"
-                                                         "Sathu"
-                                                         "Thonburi"
-                                                         "DokChampa"
-                                                         "Angsana New"
-                                                         "Tahoma"
-                                                         "Arial Unicode MS"
-                                                         "Quivira"
-                                                         ))
-    ("Tibetan"                                          (
-                                                         "Kailasa"
-                                                         "Kokonor"
-                                                         "Microsoft Himalaya"
-                                                         "Jomolhari"
-                                                         "Monlam Uni Sans Serif"
-                                                         "Arial Unicode MS"
-                                                         ))
+    ; - ("Tamil"                                            (
+    ; -                                                      "Tamil Sangam MN"
+    ; -                                                      "InaiMathi"
+    ; -                                                      "Latha"
+    ; -                                                      "Maduram"
+    ; -                                                      "Akshar Unicode"
+    ; -                                                      "Samyak Tamil"
+    ; -                                                      "Samyak"
+    ; -                                                      "Arial Unicode MS"
+    ; -                                                      ))
+    ; - ("Telugu"                                           (
+    ; -                                                      "Telugu Sangam MN"
+    ; -                                                      "Gautami"
+    ; -                                                      "Akshar Unicode"
+    ; -                                                      "Code2000"
+    ; -                                                      "Arial Unicode MS"
+    ; -                                                      ))
+    ; - ("Thaana"                                           (
+    ; -                                                      "MV Boli"
+    ; -                                                      "MPH 2B Damase"
+    ; -                                                      ))
+    ; - ("Thai"                                             (
+    ; -                                                      "Ayuthaya"
+    ; -                                                      "Silom"
+    ; -                                                      "Krungthep"
+    ; -                                                      "Sathu"
+    ; -                                                      "Thonburi"
+    ; -                                                      "DokChampa"
+    ; -                                                      "Angsana New"
+    ; -                                                      "Tahoma"
+    ; -                                                      "Arial Unicode MS"
+    ; -                                                      "Quivira"
+    ; -                                                      ))
+    ; - ("Tibetan"                                          (
+    ; -                                                      "Kailasa"
+    ; -                                                      "Kokonor"
+    ; -                                                      "Microsoft Himalaya"
+    ; -                                                      "Jomolhari"
+    ; -                                                      "Monlam Uni Sans Serif"
+    ; -                                                      "Arial Unicode MS"
+    ; -                                                      ))
     ("Tifinagh"                                         (
                                                          "DejaVu Sans:width=condensed"
                                                          "Quivira"
@@ -2589,54 +2599,55 @@ Set to nil to disable."
                                                          "Symbola"
                                                          ))
     ("Ugaritic"                                         (
-                                                         "Aegean"
+                                                         ; - "Aegean"
                                                          "Code2001"                     ; 31/31
                                                          ))
     ("Unified Canadian Aboriginal Syllabics Extended"   (
-                                                         "Euphemia UCAS"
-                                                         "Euphemia"
+                                                         ; - "Euphemia UCAS"
+                                                         ; - "Euphemia"
                                                          "Quivira"
                                                          ))
     ("Unified Canadian Aboriginal Syllabics"            (
-                                                         "Euphemia UCAS"
-                                                         "Euphemia"
+                                                         ; - "Euphemia UCAS"
+                                                         ; - "Euphemia"
                                                          "Quivira"
                                                          ))
     ("Vai"                                              (
                                                          "Quivira"
                                                          ))
-    ("Variation Selectors Supplement"                   (
-                                                         "BabelStone Han"               ; 240/240
-                                                         ))
-    ("Variation Selectors"                              (
-                                                         "BabelStone Han"               ; 16/16
-                                                         ))
-    ("Vedic Extensions"                                 (
-                                                         "Siddhanta"
-                                                         ))
+    ; - ("Variation Selectors Supplement"                   (
+    ; -                                                      "BabelStone Han"               ; 240/240
+    ; -                                                      ))
+    ; - ("Variation Selectors"                              (
+    ; -                                                      "BabelStone Han"               ; 16/16
+    ; -                                                      ))
+    ; - ("Vedic Extensions"                                 (
+    ; -                                                      "Siddhanta"
+    ; -                                                      ))
     ("Vertical Forms"                                   (
                                                          "Symbola"
                                                          ))
-    ("Yi Radicals"                                      (
-                                                         "ST Fangsong"                  ; 32/32
-                                                         "PC Myungjo"
-                                                         "Microsoft Yi Baiti"
-                                                         "Nuosu SIL"
-                                                         ))
-    ("Yi Syllables"                                     (
-                                                         "ST Fangsong"                  ; 1024/1024
-                                                         "Apple Myungjo"
-                                                         "Microsoft Yi Baiti"
-                                                         "Nuosu SIL"
-                                                         ))
-    ("Yijing Hexagram Symbols"                          (
-                                                         "Apple Symbols"
-                                                         "DejaVu Sans:width=condensed"
-                                                         "WenQuanYi Zen Hei Mono"       ; 64/64
-                                                         "BabelStone Han"               ; 64/64
-                                                         "Symbola"
-                                                         "Quivira"
-                                                         )))
+    ; - ("Yi Radicals"                                      (
+    ; -                                                      "ST Fangsong"                  ; 32/32
+    ; -                                                      "PC Myungjo"
+    ; -                                                      "Microsoft Yi Baiti"
+    ; -                                                      "Nuosu SIL"
+    ; -                                                      ))
+    ; - ("Yi Syllables"                                     (
+    ; -                                                      "ST Fangsong"                  ; 1024/1024
+    ; -                                                      "Apple Myungjo"
+    ; -                                                      "Microsoft Yi Baiti"
+    ; -                                                      "Nuosu SIL"
+    ; -                                                      ))
+    ; - ("Yijing Hexagram Symbols"                          (
+    ; -                                                      "Apple Symbols"
+    ; -                                                      "DejaVu Sans:width=condensed"
+    ; -                                                      "WenQuanYi Zen Hei Mono"       ; 64/64
+    ; -                                                      "BabelStone Han"               ; 64/64
+    ; -                                                      "Symbola"
+    ; -                                                      "Quivira"
+    ; -                                                      ))
+    )
   "Preferred fonts for each Unicode block.
 
 These mappings are only installed in Emacs if a preferred font
