@@ -2315,8 +2315,8 @@ Set to nil to disable."
     ; -                                                      ))
     ("Musical Symbols"                                  (
                                                          ; - "Musica"
-                                                         ; - "Symbola"
-                                                         "Quivira"
+                                                         "Symbola"
+                                                         ; - "Quivira"
                                                          ))
     ; - ("Myanmar Extended-A"                               (
     ; -                                                      "Myanmar Sangam MN"
@@ -2340,8 +2340,8 @@ Set to nil to disable."
     ("Number Forms"                                     (
                                                          ; - "DejaVu Sans:width=condensed"  ; 55/58
                                                          ; - "Arial Unicode MS"             ; 48/58
-                                                         ; - "Symbola"                      ; 58/58
-                                                         "Quivira"                      ; 58/58
+                                                         "Symbola"                      ; 58/58
+                                                         ; - "Quivira"                      ; 58/58
                                                          ; - "Code2000"                     ; 54/58
                                                          ))
     ("Ogham"                                            (
@@ -2370,8 +2370,8 @@ Set to nil to disable."
     ("Optical Character Recognition"                    (
                                                          ; - "Apple Symbols"
                                                          ; - "Arial Unicode MS"
-                                                         ; - "Symbola"
-                                                         "Quivira"
+                                                         "Symbola"
+                                                         ; - "Quivira"
                                                          ))
     ; - ("Oriya"                                            (
     ; -                                                      "Oriya Sangam MN"
@@ -2390,35 +2390,35 @@ Set to nil to disable."
     ; -                                                      "BabelStone Phags-pa Book:style=Regular"
     ; -                                                      "Code2000"                     ; 56/56
     ; -                                                      ))
-    ; - ("Phaistos Disc"                                    (
-    ; -                                                      ; - "Aegean"
-    ; -                                                      "Code2001"                     ; 46/46
-    ; -                                                      ))
+    ("Phaistos Disc"                                    (
+                                                         "Aegean"
+                                                         ; - "Code2001"                     ; 46/46
+                                                         ))
     ("Phoenician"                                       (
-                                                         ; - "Aegean"
-                                                         "Quivira"
+                                                         "Aegean"
+                                                         ; - "Quivira"
                                                          ; - "Code2001"                     ; 27/29
                                                          ))
     ("Phonetic Extensions Supplement"                   (
                                                          ; - "Consolas"                     ; 64/64
                                                          ; - "Calibri"                      ; 64/64
                                                          ; - "Courier New"                  ; 64/64 ; todo a better OSX choice
-                                                         "Quivira"                      ; 64/64
+                                                         ; - "Quivira"                      ; 64/64
                                                          ; - "DejaVu Sans Mono"             ; 37/64
                                                          ; - "DejaVu Sans:width=condensed"  ; 38/64
-                                                         ; - "Code2000"                     ; 64/64
+                                                         "Code2000"                     ; 64/64
                                                          ))
     ("Phonetic Extensions"                              (
                                                          ; - "Monaco"
                                                          ; - "Consolas"                     ; 128/128
                                                          ; - "Calibri"                      ; 128/128
-                                                         "Quivira"                      ; 128/128
+                                                         ; - "Quivira"                      ; 128/128
                                                          ; - "Courier New"                  ; 128/128
-                                                         ; - "DejaVu Sans:width=condensed"
+                                                         "DejaVu Sans:width=condensed"
                                                          ))
     ("Playing Cards"                                    (
-                                                         "DejaVu Sans:width=condensed"
-                                                         ; - "Symbola"
+                                                         ; - "DejaVu Sans:width=condensed"
+                                                         "Symbola"
                                                          ; - "Quivira"
                                                          ))
     ;; ("Private Use Area"                              (""))
@@ -2482,31 +2482,31 @@ Set to nil to disable."
     ("Superscripts and Subscripts"                      (
                                                          ; - "Cambria Math"                 ; 32/42
                                                          ; - "Consolas"
-                                                         ; - "Symbola"
-                                                         "Quivira"
+                                                         "Symbola"
+                                                         ; - "Quivira"
                                                          ))
     ("Supplemental Arrows-A"                            (
                                                          ; - "Apple Symbols"
                                                          ; - "Cambria Math"                 ; 16/16
-                                                         "DejaVu Sans:width=condensed"
-                                                         ; - "Symbola"
-                                                         "Quivira"
+                                                         ; - "DejaVu Sans:width=condensed"
+                                                         "Symbola"
+                                                         ; - "Quivira"
                                                          ))
     ("Supplemental Arrows-B"                            (
                                                          ; - "Apple Symbols"
                                                          ; - "Cambria Math"                 ; 128/128
-                                                         ; - "Symbola"
-                                                         "Quivira"
+                                                         "Symbola"
+                                                         ; - "Quivira"
                                                          ))
     ("Supplemental Mathematical Operators"              (
                                                          ; - "Apple Symbols"
                                                          ; - "Cambria Math"                 ; 256/256
-                                                         ; - "Symbola"                      ; 256/256
-                                                         "Quivira"                      ; 256/256
+                                                         "Symbola"                      ; 256/256
+                                                         ; - "Quivira"                      ; 256/256
                                                          ))
     ("Supplemental Punctuation"                         (
-                                                         ; - "Symbola"
-                                                         "Quivira"
+                                                         "Symbola"
+                                                         ; - "Quivira"
                                                          ; - "Code2000"
                                                          ))
     ;; ("Supplementary Private Use Area-A"              (""))
@@ -2543,9 +2543,9 @@ Set to nil to disable."
                                                          ; - "Apple Symbols"
                                                          ; - "WenQuanYi Zen Hei Mono"       ; 87/87
                                                          ; - "BabelStone Han"               ; 87/87
-                                                         "DejaVu Sans:width=condensed"
-                                                         ; - "Symbola"
-                                                         "Quivira"
+                                                         ; - "DejaVu Sans:width=condensed"
+                                                         "Symbola"
+                                                         ; - "Quivira"
                                                          ; - "Code2001"                     ; 87/87
                                                          ))
     ;; ("Takri"                                         (""))                           ; todo
@@ -2592,15 +2592,15 @@ Set to nil to disable."
     ; -                                                      ))
     ("Tifinagh"                                         (
                                                          "DejaVu Sans:width=condensed"
-                                                         "Quivira"
+                                                         ; - "Quivira"
                                                          ))
     ("Transport and Map Symbols"                        (
                                                          ;; "Apple Color Emoji"
                                                          "Symbola"
                                                          ))
     ("Ugaritic"                                         (
-                                                         ; - "Aegean"
-                                                         "Code2001"                     ; 31/31
+                                                         "Aegean"
+                                                         ; - "Code2001"                     ; 31/31
                                                          ))
     ("Unified Canadian Aboriginal Syllabics Extended"   (
                                                          ; - "Euphemia UCAS"
