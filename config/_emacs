@@ -5,17 +5,44 @@
 (add-to-list 'load-path "~/.emacs.d/utils/elscreen/")
 (add-to-list 'load-path "~/.emacs.d/utils/color-theme/")
 (add-to-list 'load-path "~/.emacs.d/modes/")
+(add-to-list 'load-path "~/.emacs.d/modes/haskell-mode/")
+
+;; --------------------
+;; === Haskell Mode ===
+;; --------------------
+
+(require 'haskell-mode-autoloads)
+(add-to-list 'Info-default-directory-list "~/.emacs.d/modes/haskell-mode/") 
+(add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
+(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
+(autoload 'haskell-mode "haskell-mode" "..." t)
+(setq haskell-program-name "/usr/loacl/bin/ghci")
 
 ;; --------------------------
 ;; === reset default face ===
 ;; --------------------------
 
 (custom-set-faces
-  '(default ((t (:height 220 :width normal :family "DejaVu Sans Mono"))))
-  ; '(default ((t (:stipple nil :background "grey20" :foreground "grey90" :inverse-video nil
-  ;   :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal
-  ;   :height 240 :width normal :family "DejaVu Sans Mono"))))
-)
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:height 180 :width normal :family "DejaVu Sans Mono"))))
+ '(agda2-highlight-coinductive-constructor-face ((t (:foreground "DarkGoldenrod2"))))
+ '(agda2-highlight-datatype-face ((t (:foreground "DarkGoldenrod2"))))
+ '(agda2-highlight-function-face ((t (:foreground "DarkGoldenrod2"))))
+ '(agda2-highlight-inductive-constructor-face ((t (:foreground "DarkGoldenrod2"))))
+ '(agda2-highlight-keyword-face ((t (:foreground "SteelBlue"))))
+ '(agda2-highlight-module-face ((t (:foreground "violet"))))
+ '(agda2-highlight-number-face ((t (:foreground "violet"))))
+ '(agda2-highlight-postulate-face ((t (:foreground "DarkGoldenrod2"))))
+ '(agda2-highlight-primitive-face ((t (:foreground "LemonChiffon2"))))
+ '(agda2-highlight-primitive-type-face ((t (:foreground "LemonChiffon2"))))
+ '(agda2-highlight-record-face ((t (:foreground "DarkGoldenrod2"))))
+ '(agda2-highlight-string-face ((t (:foreground "violet"))))
+ '(agda2-highlight-symbol-face ((((background light)) (:foreground "gray25")) (((background dark)) (:foreground "gray50"))))
+ '(font-lock-comment-face ((t (:foreground "LightPink2"))))
+ '(highlight ((((class color) (min-colors 88) (background dark)) :background "light sky blue" :foreground "black"))))
 
 ;; -------------------------------
 ;; === setup unicode  mapping ===
@@ -32,20 +59,17 @@
 ;; for speeding up. 
 
 (custom-set-variables
-  ; ignore unicode mapping overriding
-  '(unicode-fonts-ignore-overrides 't)
-  ; Dangeous! set to 'first or 'all if you're 
-  ; not sure whether you already have all 
-  ; necessary fonts or not.
-  '(unicode-fonts-existence-checks 'none) 
-  ; Fonts I used
-  '(unicode-fonts-restrict-to-fonts 
-   '("Aegean" "Aegyptus" "Akkadian"
-     "Code2000" "Code2001"
-     "DejaVu Sans Mono" "DejaVu Sans"    
-     "Geeza Pro" "Osaka" "SimHei" 
-     "Symbola" "Quivira" "Apple Symbols" "Cambria Math"))
-)
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(agda2-include-dirs (quote ("." "/Users/jaiyalas/agdaLib/lib-0.7/src" "/Users/jaiyalas/agdaLib/LightweightFreeTheorems" "/Users/jaiyalas/agdaLib/AoPA")))
+ '(haskell-program-name "/usr/local/bin/ghci")
+ '(safe-local-variable-values (quote ((require-final-newline . t) (mangle-whitespace . t))))
+ '(tab-stop-list (quote (4 8 12 16 20 24 28 32 36 40 44 48 52 56 60 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120)))
+ '(unicode-fonts-existence-checks (quote none))
+ '(unicode-fonts-ignore-overrides (quote t))
+ '(unicode-fonts-restrict-to-fonts (quote ("Aegean" "Aegyptus" "Akkadian" "Code2000" "Code2001" "DejaVu Sans Mono" "DejaVu Sans" "Geeza Pro" "Osaka" "SimHei" "Symbola" "Quivira" "Apple Symbols" "Cambria Math"))))
 
 (unicode-fonts-setup)
 
@@ -112,10 +136,7 @@
 (require 'dirtree)
 (global-set-key "\C-o" 'dirtree-show)
 
-(custom-set-variables
- '(tab-stop-list (quote (4 8 12 16 20 24 28 32 36 40 44 48 
-  52 56 60 64 68 72 76 80 84 88 92 96 100 104 108 112 116 120)))
-)
+
 
 (defun ep-dirtree ()
   (interactive)
